@@ -1,0 +1,2686 @@
+Mon Dec 13 13:35:15 2021: Starting Cisco Packet Tracer 8.0.1.0064
+Mon Dec 13 13:35:15 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\ipc\ccep.cpp(349):WARN  - Forced an exapp to be MANDATORY at run-time.
+Mon Dec 13 13:35:15 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\ipc\ccep.cpp(349):WARN  - Forced an exapp to be MANDATORY at run-time.
+Mon Dec 13 13:35:17 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(106):INFO  - setUsername - setting GA channel to NETSPACE: UA-56074537-2
+Mon Dec 13 13:35:22 2021: Script Module starting: 
+Mon Dec 13 13:35:24 2021: Opening file: C:\Users\Guest\Desktop\Project 1 Oplossingen\check.pka
+Mon Dec 13 13:35:25 2021: Saving options...
+Mon Dec 13 13:35:25 2021: Options saved.
+Mon Dec 13 13:35:25 2021: Script Module starting: 
+Mon Dec 13 13:35:25 2021: Script Module starting: 
+Mon Dec 13 13:35:26 2021: Script Module starting: 
+Mon Dec 13 13:35:26 2021: Script Module starting: 
+Mon Dec 13 13:35:26 2021: Script Module starting: net.netacad.cisco.resource
+Mon Dec 13 13:35:26 2021: Script Module starting: File
+Mon Dec 13 13:35:26 2021: Script Module stopping: File
+Mon Dec 13 13:35:27 2021: Changed device name:  to SW-007
+Mon Dec 13 13:35:27 2021: Changed device name:  to Power Distribution Device0
+Mon Dec 13 13:35:27 2021: Changed device name:  to Public-PC
+Mon Dec 13 13:35:27 2021: Changed device name:  to Public-SRV
+Mon Dec 13 13:35:28 2021: Changed device name:  to SW-1
+Mon Dec 13 13:35:28 2021: Changed device name:  to SW-2
+Mon Dec 13 13:35:28 2021: Changed device name:  to SW-0
+Mon Dec 13 13:35:28 2021: Changed device name:  to SW-4
+Mon Dec 13 13:35:28 2021: Changed device name:  to SW-3
+Mon Dec 13 13:35:29 2021: Changed device name:  to ML-1
+Mon Dec 13 13:35:29 2021: Changed device name:  to ML-2
+Mon Dec 13 13:35:29 2021: Changed device name:  to R1
+Mon Dec 13 13:35:30 2021: Changed device name:  to R2
+Mon Dec 13 13:35:30 2021: Changed device name:  to R3
+Mon Dec 13 13:35:30 2021: Changed device name:  to ISP
+Mon Dec 13 13:35:30 2021: Changed device name:  to Edge
+Mon Dec 13 13:35:30 2021: Changed device name:  to Cable Modem
+Mon Dec 13 13:35:30 2021: Changed device name:  to Cloud
+Mon Dec 13 13:35:30 2021: Changed device name:  to Power Distribution Device1
+Mon Dec 13 13:35:30 2021: Changed device name:  to VLAN 100
+Mon Dec 13 13:35:30 2021: Changed device name:  to VLAN 200
+Mon Dec 13 13:35:30 2021: Changed device name:  to VLAN 300
+Mon Dec 13 13:35:30 2021: Changed device name:  to VLAN 400
+Mon Dec 13 13:35:30 2021: Changed device name:  to Webserver
+Mon Dec 13 13:35:30 2021: Changed device name:  to Server1
+Mon Dec 13 13:35:30 2021: Changed device name:  to Admin
+Mon Dec 13 13:35:30 2021: Changed device name:  to SRV-2
+Mon Dec 13 13:35:30 2021: Changed device name:  to Power Distribution Device2
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB> en
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# channel-group 3 mode desirable 
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# no shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# channel-group 4 mode active 
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB> en
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config)# int vlan 500
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config-if)# no ip address 172.20.70.3 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config-if)# ip address 172.20.45.3 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config-if)# no ip ?
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config)# no ip default-gateway 172.20.70.254
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config)# ip default-gateway 172.20.45.254
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB> en
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB(config)# int vlan 500
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB(config-if)# no ip address 172.20.70.2 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB(config-if)# ip address 172.20.45.4 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB(config)# no ip default-gateway 172.20.70.254
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB(config)# ip default-gateway 172.20.45.254
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int port-channel 3
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip address 172.70.255.236 255.255.255.248
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip address 172.45.2.1 255.255.255.248
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int port-channel 5
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip address 172.70.255.253 255.255.255.252
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 100
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no 172.16.45.2 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no 172.16.70.254 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip 172.16.70.254 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip add 172.16.70.254 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip address 172.16.45.2 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# do sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 100
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no standby 1 ip 172.16.70.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# standby 1 ip 172.16.45.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 200
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip address 172.17.70.254 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip address 172.17.45.2 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no stanby 2 ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no stanby 2 ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no stanby ip ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no standby ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no standby ip?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no standby ip ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no standby 2 ip ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no standby 2 ip 172.17.70.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no standby 2 ip 172.17.70.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 200
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no standby 2 ip 172.70.70.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# standby 2 ip 172.17.45.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB> en
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# cof t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 100
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no  ip address 172.16.70.253 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip address 172.16.45.3 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby 1 ip 172.16.70.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# standby 1 ip 172.16.45.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 200
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip address 172.17.70.253 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip address 172.17.45.3 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby 2 ip 172.17.70.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# standby 2 ip 172.17.45.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 300
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip address 172.18.70.254 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip address 172.18.45.2 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no standby 3 ip 172.18.70.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# standby 3 ip 172.18.45.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 300
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip address ip address 172.18.70.253 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip address 172.18.70.253 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip address 172.18.45.3 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby ip 172.18.70.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby ip ?
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby ?
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby 3 ip 172.18.70.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# standby 3 ip 172.18.45.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 300
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 400
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no  ip address 172.19.70.254 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip address 172.19.45.2 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no standby 4 ip 172.19.70.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# standby 4 ip 172.19.45.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 400
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# do sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip address 172.19.70.253 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip address 172.19.45.3 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby 4 ip 172.19.45.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby 4 ip 172.19.70.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# standby 4 ip 172.19.45.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# do sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 500
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip address 172.20.70.254 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip address 172.20.45.2 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no standby 5 ip 172.20.70.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# standby 5 ip 172.20.45.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 500
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# do sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip address 172.20.70.253 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip address 172.20.45.3 255.255.255.0
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby 5 172.20.70.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no standby 5 ip 172.20.70.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# standby 5 ip 172.20.45.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# end
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB> en
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config)# int vlan 500
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config-if)# no ip address 172.20.45.3 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config-if)# ip address 172.20.45.5 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config-if)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB> en
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: R3: R3-PDB> en
+Mon Dec 13 13:35:30 2021: R3: R3-PDB# sh run
+Mon Dec 13 13:35:30 2021: R2: R2-PDB> en
+Mon Dec 13 13:35:30 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# int g0/0/1
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config-if)# no ip address 172.70.255.233 255.255.255.248
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config-if)# ip address 172.45.6.1 255.255.255.248
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config-if)# no shut
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# do sh run
+Mon Dec 13 13:35:30 2021: R3: R3-PDB# cnf t
+Mon Dec 13 13:35:30 2021: R3: R3-PDB# int g0/0/0
+Mon Dec 13 13:35:30 2021: R3: R3-PDB# conf t
+Mon Dec 13 13:35:30 2021: R3: R3-PDB(config)# int g0/0/0
+Mon Dec 13 13:35:30 2021: R3: R3-PDB(config-if)# no ip address 172.70.255.238 255.255.255.248
+Mon Dec 13 13:35:30 2021: R3: R3-PDB(config-if)# ip address 172.45.2.3 255.255.255.248
+Mon Dec 13 13:35:30 2021: R3: R3-PDB(config-if)# no shut
+Mon Dec 13 13:35:30 2021: R3: R3-PDB(config-if)# end
+Mon Dec 13 13:35:30 2021: R3: R3-PDB# sh run
+Mon Dec 13 13:35:30 2021: R1: R1-PDB> en
+Mon Dec 13 13:35:30 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:30 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:30 2021: R1: R1-PDB(config)# int port-channel 2
+Mon Dec 13 13:35:30 2021: R1: R1-PDB(config-if)# no ip address 172.70.255.234 255.255.255.248
+Mon Dec 13 13:35:30 2021: R1: R1-PDB(config-if)# ip address 172.45.2.5 255.255.255.248
+Mon Dec 13 13:35:30 2021: R1: R1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: R1: R1-PDB(config)# end
+Mon Dec 13 13:35:30 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:30 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:30 2021: R1: R1-PDB(config)# no ip route 0.0.0.0 0.0.0.0 172.70.255.233 
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# sh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# int g0/0/1
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config-if)# no ip address 172.45.6.1 255.255.255.248
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config-if)# ip address 172.45.2.4 255.255.255.248
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# end
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:30 2021: R1: R1-PDB(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:30 2021: R1: R1-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# int vlan 1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# no ip address 172.70.255.237 255.255.255.248
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# ip address 172.45.9.1 255.255.255.248
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# ip ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no ip default?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no ip default-gateway 172.70.255.237
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# ip default-gateway 172.45.9.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# no ip route 0.0.0.0 0.0.0.0 172.70.255.233
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip default-gateway 172.70.255.236
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip default-gateway 172.45.2.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# h run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp pool ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp pool vlan100
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# no network 172.16.70.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# network 172.16.45.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# no default-router 172.16.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# default-router 172.16.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# int vlan 200
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# no network 172.17.70.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp pool vlan200
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# no network 172.17.70.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# network 172.17.45.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# no default-router 172.17.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# default-router 172.17.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp pool vla3200
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# ip dhcp pool vlan300
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# no  network 172.18.70.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# network 172.18.45.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# no default-router 172.18.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# default-router 172.18.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp pool vlan400
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# no network 172.19.70.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# network 172.19.45.0 255.255.255.0
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# no default-router 172.18.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# default-router 172.18.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(dhcp-config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp pool vla3200
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.17.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.18.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.20.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.17.70.254
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.18.70.254
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.70.254
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.20.70.254
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.17.70.253
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.18.70.253
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.70.253
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.20.70.253
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.16.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.17.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.18.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.19.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.20.70.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.17.70.254
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.18.70.254
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.19.70.254
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.17.70.253
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.18.70.253
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.19.70.253
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.20.70.253
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.20.70.254
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.16.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.16.45.2
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.16.45.3
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.17.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.17.45.2
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.17.45.3
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.18.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.18.45.2
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.18.45.3
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.45.2
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.45.3
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.20.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.20.45.2
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.20.45.3
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.19.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.19.45.2
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.19.45.3
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.20.45.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.20.45.2
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no ip dhcp excluded-address 172.20.45.3
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB> en
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int port-channel 4
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no  ip address 172.70.255.235 255.255.255.248
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip address 172.45.2.2 255.255.255.248
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# end
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 100
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip helper-address 172.70.0.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.9.1 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 200
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip helper-address 172.70.0.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.9.1 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 300
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip helper-address 172.70.0.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.9.1 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 400
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip helper-address 172.70.0.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.9.1 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int vlan 500
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# no ip helper-address 172.70.0.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.9.1 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if)# end
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# no ip default-gateway 172.70.255.237
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# ip default-gateway 172.45.9.1
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:30 2021: R2: R2-PDB> en
+Mon Dec 13 13:35:30 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# shh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# no ip route 192.70.0.0 255.255.0.0 172.70.255.234 
+Mon Dec 13 13:35:30 2021: R1: R1-PDB> en
+Mon Dec 13 13:35:30 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# ip route 192.45.0.0 255.255.0.0 172.45.2.5
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB> en
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# int vlan1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# no shut
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB> conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB> en
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# cof t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# channel-group 3 mode desirable 
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# no shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# end
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB> en
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# channel-group 4 mode active 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# no shut
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# exit
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# shut
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# channel-group 4 mode active 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# no shut
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# end
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# no access-list 172.16.70.0 0.0.0.255
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# no access-list permit 172.16.70.0 0.0.0.255
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# no access-list 30 permit 172.16.70.0 0.0.0.255
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# no access-list 30 permit 172.17.70.0 0.0.0.255
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# no access-list 30 permit 172.18.70.0 0.0.0.255
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# access-list 30 permit 172.18.45.0 0.0.0.255
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# access-list 30 permit 172.17.45.0 0.0.0.255
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# access-list 30 permit 172.16.45.0 0.0.0.255
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB(config)# end
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB> en
+Mon Dec 13 13:35:30 2021: SW-1: SW-1-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB> en
+Mon Dec 13 13:35:30 2021: SW-2: SW-2-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: R3: R3-PDB> en
+Mon Dec 13 13:35:30 2021: R3: R3-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: ISP: ISP-PDB> en
+Mon Dec 13 13:35:30 2021: ISP: ISP-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: R1: R1-PDB> en
+Mon Dec 13 13:35:30 2021: R1: R1-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: R2: R2-PDB> en
+Mon Dec 13 13:35:30 2021: R2: R2-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB> en
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# channel-group 3 mode desirable 
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# no shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# end
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB> en
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# shut
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# channel-group 4 mode active 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# no shut
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB> conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB> en 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# ping 172.45.9.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# ping 172.45.9.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh ip route
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh ip route ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip routing 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# int gigabitEthernet 0/1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# ping 172.45.9.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# no shut
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf mac ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf mac 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac address-table 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac-address-table ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac-address-table 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# ping 172.45.9.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# ping 172.45.2.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh etherchannel summary 
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB> en
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 100
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip helper-address 172.70.255.237
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB> en
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.9.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac-address-table 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh mac?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh mac-address-table 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac-address-table 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# clear mac-address-table 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no int vlan 200
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh vlan ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh vlan brief 
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB> en
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh ip route
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:30 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB> en
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int range 1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int range 1g/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# channel-group 3 mode desirable 
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# no shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if-range)# end
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB> en
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# shut
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# channel-group 4 mode active 
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# no shut
+Mon Dec 13 13:35:30 2021: ML-2: ML-2-PDB(config-if-range)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB> en
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.1
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip ?
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 200
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip helper-address 172.70.255.237
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.9.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# int vlan 300
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip helper-address 172.70.255.237
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.9.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# int vlan 400
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# no ip helper-address 172.70.255.237
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.9.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# dhcp ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# dhcp ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# ip dhcp ?
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# int vlan 100
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# int vlan q
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# int vlan 1 
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# no shut
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config-if)# exit
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# no int vlan 100
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:30 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# ping 172.45.9.1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config)# int vlan 1
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# shut
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB(config-if)# end
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:30 2021: ML-1: ML-1-PDB# ping 172.45.9.1
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config)# int vlan 1
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config-if)# no  ip address 172.45.9.1 255.255.255.248
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config-if)# ip address 172.45.2.6 255.255.255.248
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# int vlan 100
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# cof t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# int vlan 200
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# int vlan 300
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# int vlan 400
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# exit
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# int vlan 500
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# no ip helper-address 172.70.0.1
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# no  ip helper-address 172.70.255.237
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB> sh run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB> en
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# int vlan 100
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# int vlan 200
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# int vlan 300
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# int vlan 400
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# int vlan 500
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# no  ip helper-address 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# ip helper-address 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.45.1
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.45.2
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config)# ip dhcp excluded-address 172.19.45.3
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config)# end
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config)# ip dhcp pool vlan400
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(dhcp-config)# no default-router 172.18.45.1
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(dhcp-config)# default-router 172.19.45.1
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(dhcp-config)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# copy running-config startup-config 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB> en
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:31 2021: SW-1: SW-1-PDB> en
+Mon Dec 13 13:35:31 2021: SW-1: SW-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# int port-channel 5
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# no ip address 172.70.255.254 255.255.255.252
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# exit
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# end
+Mon Dec 13 13:35:31 2021: R3: R3-PDB> en
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# router ospf 10
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no router-id 1.1.1.1
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no  network 172.70.255.232 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.45.2.0 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.16.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.16.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.17.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.17.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.18.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.18.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.20.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.20.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# no router ospf 10
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no router-id 1.1.1.1
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# router-id 5.5.5.5
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.17.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.18.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.18.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.20.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.20.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.70.255.232 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.45.2.0 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# exit
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.16.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.16.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# shs run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# no network 172.70.255.232 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# network 172.45.2.0 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# no network 172.17.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# no  network 172.19.70.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# network 172.18.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# no router-id 2.2.2.2
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# router-id 4.4.4.4
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# no network 172.70.255.232 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# network 172.45.2.0 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-router)# no  network 172.70.255.232 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-router)# network 172.45.2.0 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-router)# router-id 3.3.3.3
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# router-id 2.2.2.2
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# no network 172.70.255.232 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# network 172.45.2.0 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# router ospf100
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# router-id 1.1.1.1
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# no network 172.18.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:31 2021: R2: R2-PDB> en
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config)# int s0/1/0
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if)# no ip address 172.70.255.250 255.255.255.252
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if)# ip address 172.45.3.1 255.255.255.252
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config)# router ospf 10
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config)# no router ospf 10
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# no  network 172.70.255.248 0.0.0.3 area 1
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# network 172.45.3.0  0.0.0.3 area 1
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# int s0/1/0
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-if)# no ip address 172.70.255.249 255.255.255.252
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-if)# ip address 172.45.3.2 255.255.255.252
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config)# int port-channel 2
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if)# no ip ospf message-digest-key 1 md5 deblock
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if)# ip ospf message-digest-key 1 md5 akindele
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if)# ip ospf authentication message-digest 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# int port-channel 3
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# no ip ospf message-digest-key 1 md5 deblock
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# ip ospf message-digest-key 1 md5 akindele
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# ip ospf authentication message-digest 
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# no ip ospf message-digest-key 1 md5 deblock
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# int port-channel 4
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# no ip ospf message-digest-key 1 md5 deblock
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# ip ospf message-digest-key 1 md5 akindele
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# ip ospf authentication message-digest 
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# sh tun
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config)# int g0/0/0
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-if)# no ip ospf message-digest-key 1 md5 deblock
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-if)# ip ospf message-digest-key 1 md5 akindele
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-if)# ip ospf authentication message-digest 
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# int g0/0/1
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# no ip ospf message-digest-key 1 md5 deblock
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# ip ospf message-digest-key 1 md5 akindele
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# ip ospf authentication message-digest 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh rrun
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# sh run
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config)# int range g0/0/0 -1
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if-range)# shut
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if-range)# channel-group 2 mode on
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if-range)# channel-group 2 
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config-if-range)# end
+Mon Dec 13 13:35:31 2021: R1: R1-PDB# conf t
+Mon Dec 13 13:35:31 2021: R1: R1-PDB(config)# hostname R1_AE
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# int range g0/0/0 -1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# no shut
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# end
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# en
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-1: ML-1-PDB(config)# hostname MIL-AE
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip default-gateway 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip default-gateway 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# no ip default-gateway 172.45.9.1
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# ip default-gateway 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear mac address-table 
+Mon Dec 13 13:35:31 2021: R2: R2-PDB> en
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf tr
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip interface 
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB> en
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 10
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no  network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no  network 172.17.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no network 172.20.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# network 172.20.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# ens
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no router ospf 10 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no  network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no  network 172.17.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no  network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no network 172.20.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# network 172.20.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# network 172.18.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# no  network 172.18.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# network 172.18.47.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route ospf 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE> en
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-PDB> en
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# onf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.6 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R2: R2-PDB> en
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# sh  ip route
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# ip route 0.0.0.0 0.0.0.0 serial 0/1/0
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# end
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB> en
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: ML-2: ML-2-PDB(config)# hostname MIL-AE
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip rout
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB> en
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 13:35:31 2021: SW-0: SW-0-PDB(config)# hostname SW0-AE
+Mon Dec 13 13:35:31 2021: SW-0: SW0-AE(config)# end
+Mon Dec 13 13:35:31 2021: SW-0: SW0-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE> en
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf interface ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf interface gigabitEthernet 0/0/8
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf interface gigabitEthernet0/0/8
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf interface gigabitEthernet1/0/8
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf interface ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf 100
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf 100
+Mon Dec 13 13:35:31 2021: R3: R3-PDB> en
+Mon Dec 13 13:35:31 2021: R3: R3-PDB# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-PDB(config)# hostname R3-AE
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# end
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: SW-0: SW0-AE# sh ip ospf ?
+Mon Dec 13 13:35:31 2021: SW-0: SW0-AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# default-information originate ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# default-information originate 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# default-information originate always
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no default-information originate 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# access-list 102 remark block srv
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# access-list 102 deny ip host 192.45.20.1 any
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# access-list 102 permit ip any any
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# ping 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip rout3
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# ping 172.45.2.3
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# ping 172.45.2.5
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# ping 172.45.2.6
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# no default-information ?
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# no default-information originate 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE> en
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# router ospf 10
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# default-information originate 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# default-information originate 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# exit
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# no router ospf 10
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.5
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf ?
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.5
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# no default-information originate 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# default-information originate 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.5 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.5 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: SW-3: SW-3-PDB> en
+Mon Dec 13 13:35:31 2021: SW-3: SW-3-PDB# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# network 192.45.20.0 0.0.0.255 area 1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# network 192.45.10.0 0.0.0.255 area 1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB> en
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# conf t
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config)# int g0/0/1
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config-if)# no ip address 172.70.255.245 255.255.255.252
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config-if)# ip address 172.45.8.0 255.255.255.252
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config-if)# ip address 172.45.8.1 255.255.255.252
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# sh run
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# conf t
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config)# ip dhcp pool edge
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(dhcp-config)# no network 172.70.255.244 255.255.255.252
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(dhcp-config)# network 172.45.8.0 255.255.255.252
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(dhcp-config)# no default-router 172.70.255.245
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(dhcp-config)# default-router 172.45.8.1
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(dhcp-config)# end
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# sh run
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# conf t
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config)# no ip dhcp excluded-address 172.70.255.245
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config)# ip dhcp excluded-address 172.45.8.1
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config)# end
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: R2: R2-PDB> en
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# cinf t
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# int g0/0/0
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-if)# no ip address 172.70.255.241 255.255.255.252
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-if)# ip address 172.45.9.1 255.255.255.252
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# int g0/0/0.600
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-subif)# no ip address 192.70.10.254 255.255.255.0
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-subif)# ip address 192.45.10.254 255.255.255.0
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-subif)# exit
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# int g0/0/0.700
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-subif)# no ip address 192.70.20.254 255.255.255.0
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-subif)# ip address 192.45.20.254 255.255.255.0
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config-subif)# end
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE> en
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# h ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# exit
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE> en
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip ospf 
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# no default-information originate 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# con ft
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# exit
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# network 172.17.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config-router)# network 172.16.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config-router)# network 172.17.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# network 172.45.3.2 0.0.0.3 area 1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# no network 172.45.3.2 0.0.0.3 area 1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# network 172.45.3.0 0.0.0.3 area 1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# exit
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# ship route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-AE> en
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 192.45.20.0 255.255.255.0 ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 192.45.20.0 255.255.255.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 192.45.20.0 255.255.255.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# default-information originate 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.5
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# ip route 192.45.0.0 255.255.0.0 serial 0/1/0
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# shrun
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# nd
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip route 192.45.20.0 255.255.255.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip route 192.45.10.0 255.255.255.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE> en
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# int range g0/0/0 - 1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# shut
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# channel-group 2 mode ?
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# channel-group 2 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# int range g0/0/0 - 1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# no shut
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE> en
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# do sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.5 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.5 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# router ospf 10
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# no default-information ?
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# no default-information originate 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# username pieterDeBlock
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# username Ezekiel
+Mon Dec 13 13:35:31 2021: R3: R3-AE# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# no username pieterDeBlock
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# username Ezekiel
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# no username pieterDeBlock
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# username Ezekiel
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# no username Ezekiel
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# username akindele password admin
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# no username Ezekiel
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# username akindele password admin
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# no username Ezekiel
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# username akindele password admin
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB> en
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# sh run
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# conf t
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config)# username akindele password admin
+Mon Dec 13 13:35:31 2021: R2: R2-PDB> en
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# sh run
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# no username pieterDeBlock
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# username akindele password admin
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# end
+Mon Dec 13 13:35:31 2021: R2: R2-PDB# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-PDB(config)# hostname R2-AE
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no username pieterDeBlock
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# username akindele password admin
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no username pieterDeBlock
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# username akindele password admin
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: SW-1: SW-1-PDB> en
+Mon Dec 13 13:35:31 2021: SW-1: SW-1-PDB# sh run
+Mon Dec 13 13:35:31 2021: SW-1: SW-1-PDB# conf t
+Mon Dec 13 13:35:31 2021: SW-1: SW-1-PDB(config)# hostname SW-1AE
+Mon Dec 13 13:35:31 2021: SW-1: SW-1AE(config)# end
+Mon Dec 13 13:35:31 2021: SW-2: SW-2-PDB> en
+Mon Dec 13 13:35:31 2021: SW-2: SW-2-PDB# sh run
+Mon Dec 13 13:35:31 2021: SW-2: SW-2-PDB# conf t
+Mon Dec 13 13:35:31 2021: SW-2: SW-2-PDB(config)# hostname SW2-AE
+Mon Dec 13 13:35:31 2021: SW-2: SW2-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE> end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip osp neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# cont 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# int g0/0/1
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# no ip ospf ?
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# no  ip ospf message-digest-key 1 md5 deblock
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# ip ospf message-digest-key 1 md5 akindele
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# ip ospf ?
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# ip ospf authentication ?
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# ip ospf authentication message-digest 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-if)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# no default-information originate 
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-router)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf rou
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# ip routing
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R3: R3-AE> en
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 10
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# router-id 2.2.2.2
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# router-id 2.2.2.2
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# no router ospf 10
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# router-id 2.2.2.2
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# int range g1/0/7 - 8
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if-range)# shut
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if-range)# channel-group 3 mode desirable 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if-range)# no shut
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if-range)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip route 192.45.10.0 255.255.255.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip route 192.45.20.0 255.255.255.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip 0.0.0.0 0.0.0.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# en
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no network 172.19.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# no network 172.17.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospg ne
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config-router)# no  network 172.16.45.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config-router)# no  network 172.18.47.0 0.0.0.255 area 0
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# nd
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# no ip 0.0.0.0 0.0.0.0 172.45.8.1
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# no ip route 0.0.0.0 0.0.0.0 172.45.8.1
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# default-information originate 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# ip default-gateway 172.45.4
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# ip default-gateway 172.45.2.4
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip default-gateway 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip default-gateway 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip default-gateway 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip default-gateway 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# end
+Mon Dec 13 13:35:31 2021: R3: R3-AE> en
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-AE# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# ip default-gateway 172.45.2.4
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# end
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# no network 172.70.255.232 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# network 172.45.2.0 0.0.0.7 area 0
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config-router)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip default-gateway 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip default-gateway 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip default-gateway 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip default-gateway 172.45.2.6
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# int port-channel 4
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config-if)# ip ospf ?
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh cdp neighbors 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf interface 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE> en
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# int port-channel 2
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if)# no  ip ospf priority 254
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# con t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# int port-channel 3
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if)# no 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if)# no  ip ospf priority 255
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB> en
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-PDB(config)# hostname Edge-AE
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-AE> en
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# end
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: R3: R3-AE# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config-router)# no default-information originate 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R3: R3-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config-router)# default-information originate 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE> en
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# exit
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# ip route 0.0.0.0 0.0.0.0 172.45.2.4
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R3: R3-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip protocols 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip protocols 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip protocols 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# no router ospf 10
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip protocols 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route | ?
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route | begin ?
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route | begin Gateway
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# no username pieterDeBlock
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: R3: R3-AE# conf t
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# ip ?
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# ip routing
+Mon Dec 13 13:35:31 2021: R3: R3-AE(config)# end
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# int port-channel 3
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if)# ip ospf priority 0
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# int port-channel 2
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if)# ip ospf priority 0
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf ne
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R3: R3-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# router ospf 100
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# ip ospf ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# io ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# ip ?
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-router)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config)# int port-channel 3
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if)# ip ospf priority 255
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE(config-if)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# int port-channel 2
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if)# ip ospf priority 250
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# clear ip ospf process 
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE> en
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# conf t
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config)# int range g0/0/0 - 1
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# shut
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# channel-group 2
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# no shut
+Mon Dec 13 13:35:31 2021: R1: R1_AE(config-if-range)# end
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE> en
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R3: R3-AE> en
+Mon Dec 13 13:35:31 2021: R3: R3-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE> en
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# sh run
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# ping 172.45.3.1
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# ping 172.45.3.2
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# ping 192.45.20.2
+Mon Dec 13 13:35:31 2021: R2: R2-AE> en
+Mon Dec 13 13:35:31 2021: R2: R2-AE# sh run
+Mon Dec 13 13:35:31 2021: R2: R2-AE# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# no ip default-gateway 172.70.255.237
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# ip default-gateway 172.45.2.6
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# end
+Mon Dec 13 13:35:31 2021: ML-1: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: ML-2: MIL-AE# sh ip route
+Mon Dec 13 13:35:31 2021: SW-3: SW-3-PDB> en
+Mon Dec 13 13:35:31 2021: SW-3: SW-3-PDB# hostname SW3-AE
+Mon Dec 13 13:35:31 2021: SW-3: SW-3-PDB# conf t
+Mon Dec 13 13:35:31 2021: SW-3: SW-3-PDB(config)# hostname SW3-AE
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE(config)# end
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE# sh run
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE# conf t
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE(config)# no ip default-gateway 192.70.10.254
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE(config)# ip default-gateway 192.45.10.254
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE(config)# int vlan 600
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE(config-if)# no ip address 192.70.10.1 255.255.255.0
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE(config-if)# ip address 192.45.10.1 255.255.255.0
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE(config-if)# end
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE# sh run
+Mon Dec 13 13:35:31 2021: R2: R2-AE# copy running-config startup-config 
+Mon Dec 13 13:35:31 2021: R1: R1_AE# copy running-config startup-config 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# aexit
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# no access-list 30
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB> en
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB# conf t
+Mon Dec 13 13:35:31 2021: ISP: ISP-PDB(config)# hostname ISP-AE
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# end
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE# sh run
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE# conf t
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# no ip route 0.0.0.0 0.0.0.0 172.70.255.246 
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# ip route 0.0.0.0 0.0.0.0 gigabitEthernet 0/0/1
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# no ip route 192.45.0.0 255.255.0.0 172.45.2.5 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# ip route 192.45.0.0 255.255.0.0 gigabitEthernet 0/0/1
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# no ip route 192.45.0.0 255.255.0.0 gigabitEthernet 0/0/1
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# ip route 192.45.0.0 255.255.0.0 172.45.2.5 
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# access-list 102 remark block srv
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# access-list 102 deny ip host 192.45.20.1 any
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# access-list 102 permit ip any any
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# conf t
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config)# int g0/0/1
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config-if)# ip access-group 102 in
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE(config-if)# end
+Mon Dec 13 13:35:31 2021: Edge: Edge-AE# copy running-config startup-config 
+Mon Dec 13 13:35:31 2021: R2: R2-AE# conf t
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# access-list 101 remark block afdeling 1 en 2
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# access-list 101 deny ip 172.16.45.0 0.0.0.255 host 192.45.20.1
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# access-list 101 deny ip 172.17.45.0 0.0.0.255 host 192.45.20.1
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# access-list 101 permit ip any any
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config)# int s0/1/0
+Mon Dec 13 13:35:31 2021: R2: R2-AE(config-if)# ip access-group 101 in
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE> en
+Mon Dec 13 13:35:31 2021: SW-3: SW3-AE# sh run
+Mon Dec 13 13:35:31 2021: SW-0: SW0-AE> en
+Mon Dec 13 13:35:31 2021: SW-0: SW0-AE# sh run
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE> en
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE# conf t
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# ip route ?
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# ip route 172.16.45.0 255.255.255.0 gigabitEthernet 0/0/1
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# ip route 172.17.45.0 255.255.255.0 gigabitEthernet 0/0/1
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# ip route 172.18.45.0 255.255.255.0 gigabitEthernet 0/0/1
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# ip route 172.19.45.0 255.255.255.0 gigabitEthernet 0/0/1
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE(config)# end
+Mon Dec 13 13:35:31 2021: ISP: ISP-AE# copy running-config startup-config 
+Mon Dec 13 13:35:32 2021: Changed device name:  to SW-007
+Mon Dec 13 13:35:32 2021: Changed device name:  to Power Distribution Device0
+Mon Dec 13 13:35:32 2021: Changed device name:  to Public-PC
+Mon Dec 13 13:35:32 2021: Changed device name:  to Public-SRV
+Mon Dec 13 13:35:32 2021: Script Module stopping: File
+Mon Dec 13 13:35:32 2021: Script Module starting: File
+Mon Dec 13 13:35:32 2021: File opened successfully.
+Mon Dec 13 13:35:35 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:http://www.google-analytics.com/collect, data:ev=0&ec=app&ea=track&el=init&aid=com.netacad.cisco.PacketTracer&t=event&v=1&tid=UA-56074537-2&cid=be85d453-95d9-4943-8722-beb45725b58f&aiid=be85d453-95d9-4943-8722-beb45725b58f&an=Cisco%20Packet%20Tracer&av=8.0.1.0064&cd1=os_name:windows64&os_name=windows64&os_version=windows_10&os_runtime=x86_64&pt_runtime=x86_64&usage_mode=launchfrompka&ni=1
+Mon Dec 13 13:35:35 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:https://analytics01.cisco.netacad.com/Service02/analytics/v1/heartbeat7/%7Bbe85d453-95d9-4943-8722-beb45725b58f%7D/windows64/ptdesktop/8.0.1.0064/app%5Etrack%5Einit%5E0/ef95b2eb-a556-45f4-8761-81fbabea1185, data:
+Mon Dec 13 13:35:35 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:https://analytics01.cisco.netacad.com/Service02/analytics/v1/heartbeat7/%7Bbe85d453-95d9-4943-8722-beb45725b58f%7D/windows64/ptdesktop/8.0.1.0064/app%5Etrack%5Esession%5E1/ef95b2eb-a556-45f4-8761-81fbabea1185, data:
+Mon Dec 13 13:35:35 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:https://analytics01.cisco.netacad.com/Service02/analytics/v1/heartbeat7/%7Bbe85d453-95d9-4943-8722-beb45725b58f%7D/windows64/ptdesktop/8.0.1.0064/app%5Etrack-screen%5EDefaultLogical-mode%5E0/ef95b2eb-a556-45f4-8761-81fbabea1185, data:
+Mon Dec 13 13:35:35 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:https://analytics01.cisco.netacad.com/Service02/analytics/v1/heartbeat7/%7Bbe85d453-95d9-4943-8722-beb45725b58f%7D/windows64/ptdesktop/8.0.1.0064/app%5Etrack-screen%5EDefaultRealtime-mode%5E0/ef95b2eb-a556-45f4-8761-81fbabea1185, data:
+Mon Dec 13 13:35:35 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:http://www.google-analytics.com/collect, data:ev=1&sc=start&aid=com.netacad.cisco.PacketTracer&t=event&v=1&tid=UA-56074537-2&cid=be85d453-95d9-4943-8722-beb45725b58f&aiid=be85d453-95d9-4943-8722-beb45725b58f&an=Cisco%20Packet%20Tracer&av=8.0.1.0064&cd1=os_name:windows64&os_name=windows64&os_version=windows_10&os_runtime=x86_64&pt_runtime=x86_64&usage_mode=launchfrompka&ni=1
+Mon Dec 13 13:35:35 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:http://www.google-analytics.com/collect, data:ev=0&cd=DefaultLogical-mode&aid=com.netacad.cisco.PacketTracer&t=screen_view&v=1&tid=UA-56074537-2&cid=be85d453-95d9-4943-8722-beb45725b58f&aiid=be85d453-95d9-4943-8722-beb45725b58f&an=Cisco%20Packet%20Tracer&av=8.0.1.0064&cd1=os_name:windows64&os_name=windows64&os_version=windows_10&os_runtime=x86_64&pt_runtime=x86_64&usage_mode=launchfrompka&ni=1
+Mon Dec 13 13:35:35 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:http://www.google-analytics.com/collect, data:ev=0&cd=DefaultRealtime-mode&aid=com.netacad.cisco.PacketTracer&t=screen_view&v=1&tid=UA-56074537-2&cid=be85d453-95d9-4943-8722-beb45725b58f&aiid=be85d453-95d9-4943-8722-beb45725b58f&an=Cisco%20Packet%20Tracer&av=8.0.1.0064&cd1=os_name:windows64&os_name=windows64&os_version=windows_10&os_runtime=x86_64&pt_runtime=x86_64&usage_mode=launchfrompka&ni=1
+Mon Dec 13 13:35:35 2021: CPtmpServer started at port 39000
+Mon Dec 13 13:35:35 2021: Script Module starting: net.netacad.cisco.ActivitySequenceEditor
+Mon Dec 13 13:35:35 2021: Script Module starting: net.netacad.cisco.ActivitySequencer
+Mon Dec 13 13:35:35 2021: Script Module starting: net.netacad.cisco.clearTerminalAgent
+Mon Dec 13 13:35:35 2021: Script Module starting: net.netacad.cisco.Marvel
+Mon Dec 13 13:35:35 2021: Script Module starting: net.netacad.cisco.PcSoftware
+Mon Dec 13 13:35:35 2021: Script Module starting: net.netacad.cisco.PTINTERNAL
+Mon Dec 13 13:35:36 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\ipc\ccep.cpp(349):WARN  - Forced an exapp to be MANDATORY at run-time.
+Mon Dec 13 13:35:36 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:https://analytics01.cisco.netacad.com/Service02/analytics/v1/heartbeat7/%7Bbe85d453-95d9-4943-8722-beb45725b58f%7D/windows64/ptdesktop/8.0.1.0064/app%5Etrack-screen%5EDefaultLogical-mode%5E0/ef95b2eb-a556-45f4-8761-81fbabea1185, data:
+Mon Dec 13 13:35:36 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:http://www.google-analytics.com/collect, data:ev=0&cd=DefaultLogical-mode&aid=com.netacad.cisco.PacketTracer&t=screen_view&v=1&tid=UA-56074537-2&cid=be85d453-95d9-4943-8722-beb45725b58f&aiid=be85d453-95d9-4943-8722-beb45725b58f&an=Cisco%20Packet%20Tracer&av=8.0.1.0064&cd1=os_name:windows64&os_name=windows64&os_version=windows_10&os_runtime=x86_64&pt_runtime=x86_64&usage_mode=launchfrompka&ni=1
+Mon Dec 13 13:35:36 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:https://analytics01.cisco.netacad.com/Service02/analytics/v1/heartbeat7/%7Bbe85d453-95d9-4943-8722-beb45725b58f%7D/windows64/ptdesktop/8.0.1.0064/app%5Etrack-screen%5EDefaultRealtime-mode%5E0/ef95b2eb-a556-45f4-8761-81fbabea1185, data:
+Mon Dec 13 13:35:36 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:3, url:http://www.google-analytics.com/collect, data:ev=0&cd=DefaultRealtime-mode&aid=com.netacad.cisco.PacketTracer&t=screen_view&v=1&tid=UA-56074537-2&cid=be85d453-95d9-4943-8722-beb45725b58f&aiid=be85d453-95d9-4943-8722-beb45725b58f&an=Cisco%20Packet%20Tracer&av=8.0.1.0064&cd1=os_name:windows64&os_name=windows64&os_version=windows_10&os_runtime=x86_64&pt_runtime=x86_64&usage_mode=launchfrompka&ni=1
+Mon Dec 13 13:40:58 2021: Edge: Edge-AE> en
+Mon Dec 13 13:41:00 2021: Edge: Edge-AE# sh run
+Mon Dec 13 13:41:34 2021: ML-1: MIL-AE> en
+Mon Dec 13 13:41:38 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:41:47 2021: R1: R1_AE> EN
+Mon Dec 13 13:41:56 2021: R1: R1_AE# sh run
+Mon Dec 13 13:42:04 2021: R1: R1_AE# conf t
+Mon Dec 13 13:42:10 2021: R1: R1_AE(config)# int range g0/0/0 - 1
+Mon Dec 13 13:42:11 2021: R1: R1_AE(config-if-range)# shut
+Mon Dec 13 13:42:15 2021: R1: R1_AE(config-if-range)# channel-group 2
+Mon Dec 13 13:42:17 2021: R1: R1_AE(config-if-range)# ni shut
+Mon Dec 13 13:42:18 2021: R1: R1_AE(config-if-range)# no shut
+Mon Dec 13 13:42:20 2021: R1: R1_AE(config-if-range)# end
+Mon Dec 13 13:42:35 2021: R1: R1_AE# sh run
+Mon Dec 13 13:42:43 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 13:42:54 2021: ML-1: MIL-AE# sh ip ospf neighbor 
+Mon Dec 13 13:42:58 2021: ML-1: MIL-AE# sh version 
+Mon Dec 13 13:43:23 2021: ML-1: MIL-AE# sh flash
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cOpenHand.png, Offset: 0 x 0, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cClosedHand.png, Offset: 0 x 0, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cConnect.svg, Offset: 5 x 5, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cTargetX.svg, Offset: 8 x 8, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cAddDevice.svg, Offset: 8 x 8, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cInspect.svg, Offset: 8 x 8, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cAddPacket.svg, Offset: 5 x 5, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cResize.svg, Offset: 8 x 8, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cPencil.svg, Offset: 8 x 8, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:43:38 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\common\cursorbank.cpp(52):INFO  - Cursor: ../art/Cursors/cDrawingcross.svg, Offset: 8 x 8, Size: 32 x 32, DPR: 2
+Mon Dec 13 13:44:21 2021: ML-1: MIL-AE# copy flash tftp
+Mon Dec 13 13:53:15 2021: Edge: Edge-AE# conf t
+Mon Dec 13 13:53:47 2021: Edge: Edge-AE(config)# access-list 30 permit 172.16.45.0 0.0.0.255
+Mon Dec 13 13:53:50 2021: Edge: Edge-AE(config)# access-list 30 permit 172.17.45.0 0.0.0.255
+Mon Dec 13 13:53:55 2021: Edge: Edge-AE(config)# access-list 30 permit 172.18.45.0 0.0.0.255
+Mon Dec 13 13:53:59 2021: Edge: Edge-AE(config)# access-list 30 permit 172.19.45.0 0.0.0.255
+Mon Dec 13 13:56:44 2021: Edge: Edge-AE# sh run
+Mon Dec 13 14:00:01 2021: R2: R2-AE> en
+Mon Dec 13 14:00:04 2021: R2: R2-AE# sh run
+Mon Dec 13 14:00:41 2021: R2: R2-AE# conf t
+Mon Dec 13 14:00:51 2021: R2: R2-AE(config)# no access-list 10
+Mon Dec 13 14:00:55 2021: R2: R2-AE(config)# no access-list 100
+Mon Dec 13 14:00:56 2021: R2: R2-AE(config)# end
+Mon Dec 13 14:00:58 2021: R2: R2-AE# sh run
+Mon Dec 13 14:01:07 2021: R2: R2-AE# copy running-config startup-config 
+Mon Dec 13 14:01:26 2021: ML-1: MIL-AE# copy run startup-config 
+Mon Dec 13 14:01:39 2021: ML-1: MIL-AE# copy startup-config tftp: 
+Mon Dec 13 14:03:15 2021: ML-1: MIL-AE# copy startup-config tftp: 
+Mon Dec 13 14:03:40 2021: ML-2: MIL-AE> en
+Mon Dec 13 14:03:50 2021: ML-2: MIL-AE# copy running-config startup-config 
+Mon Dec 13 14:03:58 2021: ML-2: MIL-AE# copy startup-config tftp: 
+Mon Dec 13 14:06:18 2021: ML-1: MIL-AE# copy flash tftp
+Mon Dec 13 14:07:04 2021: ML-2: MIL-AE# sh version
+Mon Dec 13 14:07:10 2021: ML-2: MIL-AE# sh flash
+Mon Dec 13 14:07:51 2021: ML-2: MIL-AE# copy flsh tffp
+Mon Dec 13 14:07:58 2021: ML-2: MIL-AE# copy flash tftp: 
+Mon Dec 13 14:09:39 2021: SW-0: SW0-AE> en
+Mon Dec 13 14:09:45 2021: SW-0: SW0-AE# copy startup-config running-config 
+Mon Dec 13 14:09:55 2021: SW-0: SW-0-PDB# copy run start
+Mon Dec 13 14:10:06 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 14:12:47 2021: SW-0: SW-0-PDB# sh run
+Mon Dec 13 14:12:56 2021: SW-0: SW-0-PDB# conf t
+Mon Dec 13 14:13:03 2021: SW-0: SW-0-PDB(config)# hostname SW0-AE
+Mon Dec 13 14:13:04 2021: SW-0: SW0-AE(config)# end
+Mon Dec 13 14:13:06 2021: SW-0: SW0-AE# sh run
+Mon Dec 13 14:13:21 2021: SW-0: SW0-AE# conf t
+Mon Dec 13 14:13:26 2021: SW-0: SW0-AE(config)# int vlan 1
+Mon Dec 13 14:13:34 2021: SW-0: SW0-AE(config-if)# no  ip address 172.45.9.1 255.255.255.248
+Mon Dec 13 14:13:45 2021: SW-0: SW0-AE(config-if)# ip address 172.45.2.6 255.255.255.248
+Mon Dec 13 14:13:46 2021: SW-0: SW0-AE(config-if)# end
+Mon Dec 13 14:13:48 2021: SW-0: SW0-AE# sh run
+Mon Dec 13 14:14:18 2021: SW-0: SW0-AE# copy running-config startup-config 
+Mon Dec 13 14:14:32 2021: SW-0: SW0-AE# copy startup-config tftp
+Mon Dec 13 14:14:50 2021: R3: R3-AE> en
+Mon Dec 13 14:14:52 2021: R3: R3-AE# sh run
+Mon Dec 13 14:15:19 2021: R3: R3-AE# copy run start
+Mon Dec 13 14:15:29 2021: R3: R3-AE# copy startup-config tftp
+Mon Dec 13 14:15:51 2021: Edge: Edge-AE> en
+Mon Dec 13 14:15:57 2021: Edge: Edge-AE# copy run start
+Mon Dec 13 14:16:08 2021: Edge: Edge-AE# copy startup-config tftp
+Mon Dec 13 14:17:49 2021: Edge: Edge-AE# sh run
+Mon Dec 13 14:20:32 2021: R2: R2-AE> en
+Mon Dec 13 14:20:34 2021: R2: R2-AE# sh run
+Mon Dec 13 14:23:38 2021: Edge: Edge-AE# conf t
+Mon Dec 13 14:23:51 2021: Edge: Edge-AE(config)# access-list 102 deny ip host 192.45.20.1 ?
+Mon Dec 13 14:23:54 2021: Edge: Edge-AE(config)# access-list 102 deny ip host 192.45.20.1 any ?
+Mon Dec 13 14:24:06 2021: Edge: Edge-AE(config)# access-list 102 deny ?
+Mon Dec 13 14:29:31 2021: ML-1: MIL-AE> conf t
+Mon Dec 13 14:29:32 2021: ML-1: MIL-AE> en
+Mon Dec 13 14:29:40 2021: ML-1: MIL-AE# conf t
+Mon Dec 13 14:30:02 2021: ML-1: MIL-AE(config)# access-list 103 remark block afdeling 1 en 2
+Mon Dec 13 14:30:26 2021: ML-1: MIL-AE(config)# access-list 103 deny ip 172.16.45.0 0.0.0.255 host 192.45.20.1
+Mon Dec 13 14:30:31 2021: ML-1: MIL-AE(config)# access-list 103 deny ip 172.17.45.0 0.0.0.255 host 192.45.20.1
+Mon Dec 13 14:30:42 2021: ML-1: MIL-AE(config)# access-list 102 permit ip any any
+Mon Dec 13 14:30:53 2021: ML-1: MIL-AE(config)# int port-channel 3
+Mon Dec 13 14:31:08 2021: ML-1: MIL-AE(config-if)# ip access-group 103 out
+Mon Dec 13 14:31:38 2021: ML-2: MIL-AE> en
+Mon Dec 13 14:31:54 2021: ML-1: MIL-AE(config-if)# exit
+Mon Dec 13 14:32:05 2021: ML-1: MIL-AE(config)# hostname MIL1-AE
+Mon Dec 13 14:32:08 2021: ML-2: MIL-AE# conf t
+Mon Dec 13 14:32:13 2021: ML-2: MIL-AE(config)# hostname MIL2-AE
+Mon Dec 13 14:32:33 2021: ML-2: MIL2-AE(config)# access-list 104 remark block afdeling 1 en 2
+Mon Dec 13 14:32:53 2021: ML-2: MIL2-AE(config)# access-list 104 deny ip 172.16.45.0 0.0.0.255 host 192.45.20.1
+Mon Dec 13 14:32:59 2021: ML-2: MIL2-AE(config)# access-list 104 deny ip 172.17.45.0 0.0.0.255 host 192.45.20.1
+Mon Dec 13 14:33:08 2021: ML-2: MIL2-AE(config)# access-list 104 permit ip any any
+Mon Dec 13 14:33:29 2021: ML-2: MIL2-AE(config)# int port-channel 4
+Mon Dec 13 14:33:40 2021: ML-2: MIL2-AE(config-if)# ip access-group 102 out
+Mon Dec 13 14:33:50 2021: ML-2: MIL2-AE(config-if)# end
+Mon Dec 13 14:35:05 2021: ML-2: MIL2-AE# conf t
+Mon Dec 13 14:35:10 2021: ML-2: MIL2-AE(config)# int 4
+Mon Dec 13 14:35:14 2021: ML-2: MIL2-AE(config)# int port-channel 4
+Mon Dec 13 14:35:21 2021: ML-2: MIL2-AE(config-if)# ip access-group 104 out
+Mon Dec 13 14:35:27 2021: ML-2: MIL2-AE(config-if)# no ip access-group 102 out
+Mon Dec 13 14:35:28 2021: ML-2: MIL2-AE(config-if)# end
+Mon Dec 13 14:35:29 2021: ML-2: MIL2-AE# sh  run
+Mon Dec 13 14:35:40 2021: ML-2: MIL2-AE# conf t
+Mon Dec 13 14:35:44 2021: ML-2: MIL2-AE(config)# int port-channel 4
+Mon Dec 13 14:35:48 2021: ML-2: MIL2-AE(config-if)# ip access-group 104 out
+Mon Dec 13 14:35:49 2021: ML-2: MIL2-AE(config-if)# end
+Mon Dec 13 14:35:50 2021: ML-2: MIL2-AE# sh run
+Mon Dec 13 14:37:12 2021: ML-1: MIL1-AE(config)# end
+Mon Dec 13 14:37:13 2021: ML-1: MIL1-AE# sh run
+Mon Dec 13 14:39:10 2021: R2: R2-AE> en
+Mon Dec 13 14:39:13 2021: R2: R2-AE# conf t
+Mon Dec 13 14:39:17 2021: R2: R2-AE(config)# no access-list 101
+Mon Dec 13 14:39:18 2021: R2: R2-AE(config)# end
+Mon Dec 13 14:39:19 2021: R2: R2-AE# sh run
+Mon Dec 13 14:39:32 2021: R2: R2-AE# conf t
+Mon Dec 13 14:39:36 2021: R2: R2-AE(config)# int s0/0
+Mon Dec 13 14:39:41 2021: R2: R2-AE(config)# int s0/1/0
+Mon Dec 13 14:39:47 2021: R2: R2-AE(config-if)# no ip access-group 101 in
+Mon Dec 13 14:39:48 2021: R2: R2-AE(config-if)# end
+Mon Dec 13 14:39:49 2021: R2: R2-AE# sh run
+Mon Dec 13 14:40:54 2021: Edge: Edge-AE> en
+Mon Dec 13 14:40:58 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 14:41:02 2021: Edge: Edge-AE# sh ip nat statistics 
+Mon Dec 13 14:41:07 2021: Edge: Edge-AE# sh run
+Mon Dec 13 14:41:36 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 14:41:51 2021: Edge: Edge-AE# sh ip nat statistics 
+Mon Dec 13 14:41:55 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 14:44:12 2021: R2: R2-AE# conf t
+Mon Dec 13 14:44:32 2021: R2: R2-AE(config)# access-list 100 remark block internet access
+Mon Dec 13 14:45:20 2021: R2: R2-AE(config)# access-list 100 deny ip 192.45.20.1 0.0.0.255 host 8.8.8.8
+Mon Dec 13 14:45:32 2021: R2: R2-AE(config)# access-list 100 permit ip any any
+Mon Dec 13 14:45:46 2021: R2: R2-AE(config)# int g0/0/0
+Mon Dec 13 14:45:55 2021: R2: R2-AE(config-if)# ip access-group 100 in
+Mon Dec 13 14:46:11 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 14:47:49 2021: R2: R2-AE(config-if)# end
+Mon Dec 13 14:47:51 2021: R2: R2-AE# sh run
+Mon Dec 13 14:47:58 2021: R2: R2-AE# conf t
+Mon Dec 13 14:48:07 2021: R2: R2-AE(config)# int g0/0/0.700
+Mon Dec 13 14:48:09 2021: R2: R2-AE(config-subif)# ip access-group 100 in
+Mon Dec 13 14:48:10 2021: R2: R2-AE(config-subif)# end
+Mon Dec 13 14:50:10 2021: Edge: Edge-AE# conf t
+Mon Dec 13 14:50:39 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 14:50:55 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 14:50:56 2021: Edge: Edge-AE# sh run
+Mon Dec 13 14:51:03 2021: Edge: Edge-AE# conf t
+Mon Dec 13 14:51:06 2021: Edge: Edge-AE(config)# no access-list 102
+Mon Dec 13 14:51:14 2021: Edge: Edge-AE(config)# int g0/0/1
+Mon Dec 13 14:51:18 2021: Edge: Edge-AE(config-if)# no ip access-group 102
+Mon Dec 13 14:51:21 2021: Edge: Edge-AE(config-if)# no ip access-group 102 in
+Mon Dec 13 14:51:22 2021: Edge: Edge-AE(config-if)# end
+Mon Dec 13 14:51:23 2021: Edge: Edge-AE# sh run
+Mon Dec 13 14:53:17 2021: R2: R2-AE# sh run
+Mon Dec 13 14:54:00 2021: R2: R2-AE# conf t
+Mon Dec 13 14:54:04 2021: R2: R2-AE(config)# no access-list 100
+Mon Dec 13 14:54:19 2021: R2: R2-AE(config)# access-list 100 remark block server 1 internet access
+Mon Dec 13 14:54:37 2021: R2: R2-AE(config)# access-list 100 deny ip 192.45.20.1 0.0.0.255 host 8.8.8.8
+Mon Dec 13 14:54:44 2021: R2: R2-AE(config)# access-list 100 permit ip any
+Mon Dec 13 14:54:47 2021: R2: R2-AE(config)# access-list 100 permit ip any any
+Mon Dec 13 14:54:48 2021: R2: R2-AE(config)# end
+Mon Dec 13 14:54:50 2021: R2: R2-AE# sh run
+Mon Dec 13 14:55:02 2021: R2: R2-AE# conf t
+Mon Dec 13 14:55:36 2021: R2: R2-AE(config)# no access-list 100
+Mon Dec 13 14:55:39 2021: R2: R2-AE(config)# access-list 100 remark block server 1 internet access
+Mon Dec 13 14:56:00 2021: R2: R2-AE(config)# access-list 100 deny ip host 192.45.20.1 host 8.8.8.8
+Mon Dec 13 14:56:04 2021: R2: R2-AE(config)# access-list 100 permit ip any any
+Mon Dec 13 14:56:07 2021: R2: R2-AE(config)# end
+Mon Dec 13 14:56:09 2021: R2: R2-AE# sh run
+Mon Dec 13 14:57:22 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 14:57:39 2021: R2: R2-AE# copy running-config startup-config 
+Mon Dec 13 14:58:21 2021: R2: R2-AE# copy startup-config tftp
+Mon Dec 13 14:58:54 2021: Edge: Edge-AE# copy running-config startup-config 
+Mon Dec 13 14:59:01 2021: Edge: Edge-AE# copy startup-config tftp
+Mon Dec 13 14:59:35 2021: R1: R1_AE> en]
+Mon Dec 13 15:00:04 2021: R1: R1_AE> en
+Mon Dec 13 15:00:10 2021: R1: R1_AE# copy running-config startup-config 
+Mon Dec 13 15:00:17 2021: R1: R1_AE# copy startup-config tftp
+Mon Dec 13 15:00:54 2021: ISP: ISP-AE> en
+Mon Dec 13 15:00:57 2021: ISP: ISP-AE# copy running-config startup-config 
+Mon Dec 13 15:01:04 2021: ISP: ISP-AE# copy startup-config tftp
+Mon Dec 13 15:02:23 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:02:51 2021: Edge: Edge-AE(config)# ip nat inside source 192.45.20.2 8.8.8.8
+Mon Dec 13 15:07:48 2021: Public-PC: C:\> traceroute 172.16.45.4
+Mon Dec 13 15:07:52 2021: Public-PC: C:\> traceroute -172.16.45.4
+Mon Dec 13 15:08:01 2021: Public-PC: C:\> clear
+Mon Dec 13 15:08:11 2021: Public-PC: C:\> clear
+Mon Dec 13 15:09:14 2021: ML-1: MIL1-AE> en
+Mon Dec 13 15:09:20 2021: ML-1: MIL1-AE# copy run startup-config 
+Mon Dec 13 15:10:20 2021: Edge: Edge-AE(config)# exit
+Mon Dec 13 15:10:26 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:20:31 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 15:20:51 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:21:04 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:21:06 2021: Edge: Edge-AE(config)# ip nat ?
+Mon Dec 13 15:21:15 2021: Edge: Edge-AE(config)# ip nat outside ?
+Mon Dec 13 15:21:29 2021: Edge: Edge-AE(config)# ip nat outside source 8.8.8.0 192.45.20.2
+Mon Dec 13 15:21:35 2021: Edge: Edge-AE(config)# ip nat outside source static 8.8.8.0 192.45.20.2
+Mon Dec 13 15:21:36 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:21:42 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 15:21:56 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:22:06 2021: Edge: Edge-AE# sh ip nat statistics 
+Mon Dec 13 15:22:25 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:22:35 2021: Edge: Edge-AE(config)# ip nat outside source static 8.8.8.8 192.45.20.2
+Mon Dec 13 15:22:36 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:22:44 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 15:23:01 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:23:11 2021: Edge: Edge-AE# sh ip nat statistics 
+Mon Dec 13 15:23:15 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:23:21 2021: Edge: Edge-AE(config)# no ip nat outside source static 8.8.8.8 192.45.20.2
+Mon Dec 13 15:23:29 2021: Edge: Edge-AE(config)# no ip nat outside source static 8.8.8.0 192.45.20.2
+Mon Dec 13 15:23:30 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:23:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 15:23:40 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 15:24:24 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:26:02 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:26:06 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:26:08 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:26:16 2021: Edge: Edge-AE(config)# ip nat outside source static 8.8.8.8 192.45.20.2
+Mon Dec 13 15:26:17 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:26:19 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:26:34 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 15:28:43 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:28:51 2021: Edge: Edge-AE(config)# no ip nat outside source static 8.8.8.8 192.45.20.2
+Mon Dec 13 15:28:54 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:29:02 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:35:18 2021: Edge: Edge-AE# sh run
+Mon Dec 13 15:35:33 2021: Edge: Edge-AE# sh ip route
+Mon Dec 13 15:35:45 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:38:33 2021: Edge: Edge-AE(config)# ip nat inside source static 192.45.0.2 ?
+Mon Dec 13 15:38:50 2021: Edge: Edge-AE(config)# ip nat inside source static 192.45.0.2 172.45.8.2
+Mon Dec 13 15:38:51 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:38:55 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:39:08 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 15:41:23 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:41:30 2021: Edge: Edge-AE(config)# no ip nat inside source static 192.45.0.2 172.45.8.2
+Mon Dec 13 15:41:59 2021: Edge: Edge-AE(config)# ip nat inside source static 192.45.0.2:80 172.45.8.2:80
+Mon Dec 13 15:42:04 2021: Edge: Edge-AE(config)# ip nat inside source static 192.45.0.2:80 172.45.8.2:80 ?
+Mon Dec 13 15:42:15 2021: Edge: Edge-AE(config)# ip nat inside source static 192.45.0.2 ?
+Mon Dec 13 15:43:04 2021: Edge: Edge-AE(config)# ip nat inside source static 192.45.0.2 80 172.45.8.2 80 
+Mon Dec 13 15:44:22 2021: Edge: Edge-AE(config)# ip nat inside source static 192.45.0.2/80 172.45.8.2/80 
+Mon Dec 13 15:45:17 2021: Edge: Edge-AE(config)# ip nat inside source static    ?
+Mon Dec 13 15:45:53 2021: Edge: Edge-AE(config)# ip nat inside source static udp ?
+Mon Dec 13 15:46:04 2021: Edge: Edge-AE(config)# ip nat inside source static udp 192.45.0.2 172.45.8.2
+Mon Dec 13 15:46:10 2021: Edge: Edge-AE(config)# ip nat inside source static udp 192.45.0.2 ?
+Mon Dec 13 15:46:16 2021: Edge: Edge-AE(config)# ip nat inside source static udp 192.45.0.2 80 ?
+Mon Dec 13 15:46:22 2021: Edge: Edge-AE(config)# ip nat inside source static udp 192.45.0.2 80 172.45.8.2
+Mon Dec 13 15:46:25 2021: Edge: Edge-AE(config)# ip nat inside source static udp 192.45.0.2 80 172.45.8.2 ?
+Mon Dec 13 15:46:28 2021: Edge: Edge-AE(config)# ip nat inside source static udp 192.45.0.2 80 172.45.8.2 80
+Mon Dec 13 15:46:29 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:46:31 2021: Edge: Edge-AE# sh run
+Mon Dec 13 15:46:43 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\gui\deviceconfig\workstation\workstationwebview.cpp(50):INFO  - CWwvUrlInterceptor() - called
+Mon Dec 13 15:47:09 2021: Edge: Edge-AE# sh ip nat translations 
+Mon Dec 13 15:48:09 2021: Edge: Edge-AE# copy running-config startup-config 
+Mon Dec 13 15:48:13 2021: Edge: Edge-AE# conf t
+Mon Dec 13 15:48:14 2021: Edge: Edge-AE(config)# end
+Mon Dec 13 15:48:27 2021: Edge: Edge-AE# copy startup-config tftp
+Mon Dec 13 15:50:00 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 15:50:01 2021: Saving options...
+Mon Dec 13 15:50:01 2021: Options saved.
+Mon Dec 13 15:50:01 2021: File saved successfully.
+Mon Dec 13 15:50:13 2021: R1: R1_AE> en
+Mon Dec 13 15:50:16 2021: R1: R1_AE# sh run
+Mon Dec 13 16:08:14 2021: Link deleted: R1 Serial0/1/0 to R2 Serial0/1/0, 8106
+Mon Dec 13 16:09:22 2021: Link created: R2 GigabitEthernet0/0/2 to R1 GigabitEthernet0/0/2, 8100
+Mon Dec 13 16:09:44 2021: R1: R1_AE> en
+Mon Dec 13 16:09:47 2021: R1: R1_AE# sh run
+Mon Dec 13 16:09:56 2021: R1: R1_AE# sh run
+Mon Dec 13 16:10:14 2021: R1: R1_AE# conf t
+Mon Dec 13 16:10:18 2021: R1: R1_AE(config)# ing g0/0/2
+Mon Dec 13 16:10:21 2021: R1: R1_AE(config)# int g0/0/2
+Mon Dec 13 16:10:36 2021: R1: R1_AE(config-if)# ip address 172.45.3.1 255.255.255.252
+Mon Dec 13 16:10:52 2021: R1: R1_AE(config-if)# exit
+Mon Dec 13 16:10:57 2021: R1: R1_AE(config)# int s0/1/0
+Mon Dec 13 16:11:06 2021: R1: R1_AE(config-if)# no  ip address 172.45.3.1 255.255.255.252
+Mon Dec 13 16:11:07 2021: R1: R1_AE(config-if)# exit
+Mon Dec 13 16:11:10 2021: R1: R1_AE(config)# int g0/0/2
+Mon Dec 13 16:11:13 2021: R1: R1_AE(config-if)# ip address 172.45.3.1 255.255.255.252
+Mon Dec 13 16:11:24 2021: R1: R1_AE(config-if)# ip ospf network point-to-point 
+Mon Dec 13 16:11:32 2021: R1: R1_AE(config-if)# ip ospf ?
+Mon Dec 13 16:11:39 2021: R1: R1_AE(config-if)# no shut
+Mon Dec 13 16:11:42 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 16:11:53 2021: R2: R2-AE> en
+Mon Dec 13 16:11:56 2021: R2: R2-AE# sh run
+Mon Dec 13 16:12:10 2021: R2: R2-AE# conf t
+Mon Dec 13 16:12:16 2021: R2: R2-AE(config)# int s0/1/0
+Mon Dec 13 16:12:24 2021: R2: R2-AE(config-if)# no ip address 172.45.3.2 255.255.255.252
+Mon Dec 13 16:12:27 2021: R2: R2-AE(config-if)# exit
+Mon Dec 13 16:12:31 2021: R2: R2-AE(config)# int g0/0/2
+Mon Dec 13 16:12:34 2021: R2: R2-AE(config-if)# ip address 172.45.3.2 255.255.255.252
+Mon Dec 13 16:12:41 2021: R2: R2-AE(config-if)# ip ospf network point-to-point 
+Mon Dec 13 16:12:48 2021: R2: R2-AE(config-if)# ip access-group 110 out
+Mon Dec 13 16:12:49 2021: R2: R2-AE(config-if)# end
+Mon Dec 13 16:12:56 2021: R2: R2-AE# conf t
+Mon Dec 13 16:12:59 2021: R2: R2-AE(config)# int g0/0/2
+Mon Dec 13 16:13:00 2021: R2: R2-AE(config-if)# no shut
+Mon Dec 13 16:13:02 2021: R2: R2-AE(config-if)# end
+Mon Dec 13 16:13:47 2021: R1: R1_AE# sh ip ospf neighbor 
+Mon Dec 13 16:13:51 2021: R1: R1_AE# sh run
+Mon Dec 13 16:15:51 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 16:15:52 2021: Saving options...
+Mon Dec 13 16:15:52 2021: Options saved.
+Mon Dec 13 16:15:52 2021: File saved successfully.
+Mon Dec 13 16:15:57 2021: ISP: ISP-AE> en
+Mon Dec 13 16:15:58 2021: ISP: ISP-AE# sh run
+Mon Dec 13 16:16:23 2021: Edge: Edge-AE> en
+Mon Dec 13 16:16:26 2021: Edge: Edge-AE# sh run
+Mon Dec 13 16:18:58 2021: R1: R1_AE# sh ip route
+Mon Dec 13 16:20:29 2021: ISP: ISP-AE# sh run
+Mon Dec 13 16:22:24 2021: R2: R2-AE# conf t
+Mon Dec 13 16:22:30 2021: R2: R2-AE(config)# router ospf 100
+Mon Dec 13 16:22:55 2021: R2: R2-AE(config-router)# network 192.45.20.0 0.0.0.255 area 1
+Mon Dec 13 16:23:02 2021: R2: R2-AE(config-router)# network 192.45.10.0 0.0.0.255 area 1
+Mon Dec 13 16:23:48 2021: R2: R2-AE(config-router)# network 172.45.3.0 0.0.0.3 area 1
+Mon Dec 13 16:23:52 2021: R2: R2-AE(config-router)# end
+Mon Dec 13 16:23:56 2021: R2: R2-AE# conf t
+Mon Dec 13 16:24:40 2021: R2: R2-AE(config)# end
+Mon Dec 13 16:24:41 2021: R2: R2-AE# sh run
+Mon Dec 13 16:24:53 2021: R2: R2-AE# sh ip ospf neighbor 
+Mon Dec 13 16:25:26 2021: R2: R2-AE# conf t
+Mon Dec 13 16:25:37 2021: R2: R2-AE(config)# int g0/0/2
+Mon Dec 13 16:25:50 2021: R2: R2-AE(config-if)# ip ospf 100 area 1
+Mon Dec 13 16:26:14 2021: R1: R1_AE# conf t
+Mon Dec 13 16:26:19 2021: R1: R1_AE(config)# int g0/0/2
+Mon Dec 13 16:26:25 2021: R1: R1_AE(config-if)# ip ospf 100 area 1
+Mon Dec 13 16:26:26 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 16:26:36 2021: R2: R2-AE(config-if)# end
+Mon Dec 13 16:26:39 2021: R2: R2-AE# sh ip route
+Mon Dec 13 16:26:46 2021: R1: R1_AE# sh ip route
+Mon Dec 13 16:27:12 2021: R1: R1_AE# copy running-config startup-config 
+Mon Dec 13 16:27:20 2021: R2: R2-AE# copy run startup-config 
+Mon Dec 13 16:28:49 2021: R2: R2-AE# copy running-config startup-config 
+Mon Dec 13 16:28:55 2021: R2: R2-AE# copy startup-config tftp
+Mon Dec 13 16:29:24 2021: R1: R1_AE# copy startup-config tftp
+Mon Dec 13 16:30:49 2021: Edge: Edge-AE# `sh run
+Mon Dec 13 16:30:51 2021: Edge: Edge-AE# sh run
+Mon Dec 13 16:32:01 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 16:32:02 2021: Saving options...
+Mon Dec 13 16:32:02 2021: Options saved.
+Mon Dec 13 16:32:02 2021: File saved successfully.
+Mon Dec 13 16:33:56 2021: Saving options...
+Mon Dec 13 16:33:56 2021: Options saved.
+Mon Dec 13 16:33:58 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 16:33:59 2021: Saving options...
+Mon Dec 13 16:33:59 2021: Options saved.
+Mon Dec 13 16:33:59 2021: File saved successfully.
+Mon Dec 13 16:40:13 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 16:40:14 2021: Saving options...
+Mon Dec 13 16:40:14 2021: Options saved.
+Mon Dec 13 16:40:14 2021: File saved successfully.
+Mon Dec 13 16:41:35 2021: SW-3: SW3-AE> en
+Mon Dec 13 16:41:37 2021: SW-3: SW3-AE# sh run
+Mon Dec 13 16:51:56 2021: VLAN 100: C:\> ssh -l 172.16.45.254
+Mon Dec 13 16:52:00 2021: VLAN 100: C:\> ssh - l 172.16.45.254
+Mon Dec 13 16:52:27 2021: VLAN 100: C:\> ssh - l ezekiel 172.16.45.254
+Mon Dec 13 16:54:42 2021: ML-2: MIL2-AE> en
+Mon Dec 13 16:54:44 2021: ML-2: MIL2-AE# sh run
+Mon Dec 13 16:54:57 2021: ML-1: MIL1-AE> end
+Mon Dec 13 16:55:11 2021: ML-1: MIL1-AE> exit
+Mon Dec 13 16:55:25 2021: ML-1: MIL1-AE> exit
+Mon Dec 13 16:55:34 2021: ML-1: MIL1-AE> exit
+Mon Dec 13 16:56:44 2021: ML-1: MIL1-AE> en
+Mon Dec 13 16:56:48 2021: ML-1: MIL1-AE# sh run
+Mon Dec 13 16:57:03 2021: ML-1: MIL1-AE# conf t
+Mon Dec 13 16:57:11 2021: ML-1: MIL1-AE(config)# line vty 0 4
+Mon Dec 13 16:57:17 2021: ML-1: MIL1-AE(config-line)# login ?
+Mon Dec 13 16:57:31 2021: ML-1: MIL1-AE(config-line)# login local
+Mon Dec 13 16:57:32 2021: ML-1: MIL1-AE(config-line)# end
+Mon Dec 13 17:07:13 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 17:07:14 2021: Saving options...
+Mon Dec 13 17:07:14 2021: Options saved.
+Mon Dec 13 17:07:14 2021: File saved successfully.
+Mon Dec 13 17:07:28 2021: R3: R3-AE> en 
+Mon Dec 13 17:07:34 2021: R3: R3-AE# ipv6 ?
+Mon Dec 13 17:07:38 2021: R3: R3-AE# conf t
+Mon Dec 13 17:07:44 2021: R3: R3-AE(config)# ipv6 ?
+Mon Dec 13 17:07:48 2021: R3: R3-AE(config)# ipv6 router ?
+Mon Dec 13 17:07:57 2021: R3: R3-AE(config)# ipv6 unicast-routing 
+Mon Dec 13 17:08:12 2021: R3: R3-AE(config)# int g0/0/0
+Mon Dec 13 17:08:15 2021: R3: R3-AE(config-if)# ipv6 ?
+Mon Dec 13 17:08:58 2021: R3: R3-AE(config-if)# ipv6 address 2001:0db8:acad:ca01::1 ?
+Mon Dec 13 17:09:24 2021: R3: R3-AE(config-if)# ipv6 address 2001:0db8:acad:ca01::1/64 ?
+Mon Dec 13 17:09:47 2021: R3: R3-AE(config-if)# ipv6 address 2001:0db8:acad:ca01::1/64 
+Mon Dec 13 17:09:54 2021: R3: R3-AE(config-if)# exit
+Mon Dec 13 17:10:05 2021: R3: R3-AE(config)# int g0/0/1
+Mon Dec 13 17:10:16 2021: R3: R3-AE(config-if)# ipv6 address 2001:0db8:acad:ca02::1/64 
+Mon Dec 13 17:10:19 2021: R3: R3-AE(config-if)# exit
+Mon Dec 13 17:11:15 2021: R1: R1_AE> en
+Mon Dec 13 17:11:18 2021: R1: R1_AE# conf t
+Mon Dec 13 17:11:21 2021: R1: R1_AE(config)# ipv6 unicast-routing 
+Mon Dec 13 17:11:27 2021: R1: R1_AE(config)# int port-channel 2
+Mon Dec 13 17:11:52 2021: R1: R1_AE(config-if)# ipv6 address 2001:0db8:acad:ca01::1/64 
+Mon Dec 13 17:12:12 2021: R3: R3-AE(config)# int g0/0/0
+Mon Dec 13 17:12:27 2021: R3: R3-AE(config-if)# no ipv6 address 2001:0db8:acad:ca01::1/64
+Mon Dec 13 17:12:30 2021: R3: R3-AE(config-if)# ipv6 address 2001:0db8:acad:ca01::2/64
+Mon Dec 13 17:12:31 2021: R3: R3-AE(config-if)# end
+Mon Dec 13 17:12:32 2021: R3: R3-AE# sh run
+Mon Dec 13 17:12:49 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 17:12:50 2021: R1: R1_AE# conf t
+Mon Dec 13 17:12:57 2021: R1: R1_AE(config)# int g0/0/2
+Mon Dec 13 17:13:10 2021: R1: R1_AE(config-if)# ipv6 address 2001:0db8:acad:ca03::1/64
+Mon Dec 13 17:13:11 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 17:13:18 2021: R2: R2-AE> en
+Mon Dec 13 17:13:22 2021: R2: R2-AE# conf t
+Mon Dec 13 17:13:25 2021: R2: R2-AE(config)# ipv6 unicast-routing 
+Mon Dec 13 17:13:29 2021: R2: R2-AE(config)# int g0/0/2
+Mon Dec 13 17:13:39 2021: R2: R2-AE(config-if)# ipv6 address 2001:0db8:acad:ca03::2/64
+Mon Dec 13 17:13:40 2021: R2: R2-AE(config-if)# end
+Mon Dec 13 17:13:45 2021: R2: R2-AE# copy running-config startup-config 
+Mon Dec 13 17:13:55 2021: R1: R1_AE# copy run startup-config 
+Mon Dec 13 17:14:04 2021: R3: R3-AE# copy run startup-config 
+Mon Dec 13 17:14:56 2021: SW-4: SW-4-PDB> en
+Mon Dec 13 17:14:59 2021: SW-4: SW-4-PDB# sh run
+Mon Dec 13 17:15:06 2021: SW-4: SW-4-PDB# conf t
+Mon Dec 13 17:15:13 2021: SW-4: SW-4-PDB(config)# hostname SW-4 AE
+Mon Dec 13 17:15:21 2021: SW-4: SW-4-PDB(config)# hostname SW4-AE
+Mon Dec 13 17:15:22 2021: SW-4: SW4-AE(config)# end
+Mon Dec 13 17:15:24 2021: SW-4: SW4-AE# conf t
+Mon Dec 13 17:15:26 2021: SW-4: SW4-AE(config)# int vlan 1
+Mon Dec 13 17:15:33 2021: SW-4: SW4-AE(config-if)# ipv6 ?
+Mon Dec 13 17:15:47 2021: SW-4: SW4-AE(config-if)# ?
+Mon Dec 13 17:15:49 2021: SW-4: SW4-AE(config-if)# ip ?
+Mon Dec 13 17:16:19 2021: SW-4: SW4-AE(config-if)# ipv6 ?
+Mon Dec 13 17:16:44 2021: SW-4: SW4-AE(config-if)# exit
+Mon Dec 13 17:16:47 2021: SW-4: SW4-AE(config)# ipv6 ?
+Mon Dec 13 17:28:24 2021: SW-4: SW4-AE(config)# end
+Mon Dec 13 17:28:26 2021: SW-4: SW4-AE# sh run
+Mon Dec 13 17:28:32 2021: SW-4: SW4-AE# conf t
+Mon Dec 13 17:29:57 2021: SW-4: SW4-AE(config)# ipv6 ?
+Mon Dec 13 17:30:01 2021: SW-4: SW4-AE(config)# ?
+Mon Dec 13 17:30:10 2021: SW-4: SW4-AE(config)# ip ?
+Mon Dec 13 17:30:10 2021: SW-4: SW4-AE(config)# ip ?
+Mon Dec 13 17:31:03 2021: SW-4: SW4-AE(config)# int vlan 1
+Mon Dec 13 17:31:08 2021: SW-4: SW4-AE(config-if)# routing
+Mon Dec 13 17:31:10 2021: SW-4: SW4-AE(config-if)# ?
+Mon Dec 13 17:31:16 2021: SW-4: SW4-AE(config-if)# ip ?
+Mon Dec 13 17:31:18 2021: SW-4: SW4-AE(config-if)# ipv6 ?
+Mon Dec 13 17:32:48 2021: SW-4: SW4-AE(config-if)# end
+Mon Dec 13 17:32:51 2021: SW-4: SW4-AE# conf t
+Mon Dec 13 17:32:53 2021: SW-4: SW4-AE(config)# sdm ?
+Mon Dec 13 17:32:59 2021: SW-4: SW4-AE(config)# sdm prefer ?
+Mon Dec 13 17:33:09 2021: SW-4: SW4-AE(config)# sdm prefer dual ?
+Mon Dec 13 17:36:46 2021: SW-4: SW4-AE(config)# exit
+Mon Dec 13 17:36:50 2021: SW-4: SW4-AE# sh version 
+Mon Dec 13 17:36:58 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 17:36:58 2021: Saving options...
+Mon Dec 13 17:36:58 2021: Options saved.
+Mon Dec 13 17:36:58 2021: File saved successfully.
+Mon Dec 13 17:37:10 2021: SW-4: SW4-AE# conf t
+Mon Dec 13 17:37:16 2021: SW-4: SW4-AE(config)# int vlan 1
+Mon Dec 13 17:37:18 2021: SW-4: SW4-AE(config-if)# ipv6 ?
+Mon Dec 13 17:37:20 2021: SW-4: SW4-AE(config-if)# ip ?
+Mon Dec 13 17:37:25 2021: SW-4: SW4-AE(config-if)# end
+Mon Dec 13 17:40:32 2021: Changed device name:  to Switch0
+Mon Dec 13 17:40:32 2021: Created device: Switch0 model: 2960-24TT
+Mon Dec 13 17:40:46 2021: Switch0: Switch> en
+Mon Dec 13 17:40:48 2021: Switch0: Switch# conf t
+Mon Dec 13 17:40:50 2021: Switch0: Switch(config)# sdm ?
+Mon Dec 13 17:40:52 2021: Switch0: Switch(config)# sdm prefer ?
+Mon Dec 13 17:40:57 2021: Switch0: Switch(config)# sdm prefer dual-ipv4-and-ipv6 ?
+Mon Dec 13 17:41:01 2021: Switch0: Switch(config)# sdm prefer dual-ipv4-and-ipv6 default 
+Mon Dec 13 17:41:21 2021: Changed device name: Switch0 to Switch r
+Mon Dec 13 17:41:24 2021: Changed device name: Switch r to Switch 4
+Mon Dec 13 17:41:33 2021: Link deleted: R3 GigabitEthernet0/0/1 to SW-4 GigabitEthernet0/1, 8100
+Mon Dec 13 17:41:35 2021: Link deleted: SRV-2 FastEthernet0 to SW-4 FastEthernet0/1, 8100
+Mon Dec 13 17:41:49 2021: Changed device name: Switch 4 to SW- 4
+Mon Dec 13 17:42:06 2021: Link created: R3 GigabitEthernet0/0/1 to SW- 4 FastEthernet0/1, 8100
+Mon Dec 13 17:42:15 2021: Link created: SW- 4 FastEthernet0/2 to SRV-2 FastEthernet0, 8100
+Mon Dec 13 17:43:18 2021: ML-1: MIL1-AE> en
+Mon Dec 13 17:43:22 2021: ML-1: MIL1-AE# sh run
+Mon Dec 13 17:43:53 2021: Link deleted: R3 GigabitEthernet0/0/1 to SW- 4 FastEthernet0/1, 8100
+Mon Dec 13 17:43:54 2021: Link deleted: SW- 4 FastEthernet0/2 to SRV-2 FastEthernet0, 8100
+Mon Dec 13 17:44:03 2021: Link created: R3 GigabitEthernet0/0/1 to SW- 4 GigabitEthernet0/1, 8100
+Mon Dec 13 17:44:10 2021: Link created: SW- 4 GigabitEthernet0/2 to SRV-2 FastEthernet0, 8100
+Mon Dec 13 17:44:15 2021: SW- 4: Switch(config)# int 
+Mon Dec 13 17:44:22 2021: SW-4: SW4-AE# sh run
+Mon Dec 13 17:44:40 2021: Removed device: SW-4
+Mon Dec 13 17:44:54 2021: SW- 4: Switch(config)# int vlan 1
+Mon Dec 13 17:44:56 2021: SW- 4: Switch(config-if)# ipv6 ?
+Mon Dec 13 17:45:03 2021: SW- 4: Switch(config-if)# xit
+Mon Dec 13 17:45:05 2021: SW- 4: Switch(config-if)# exit
+Mon Dec 13 17:45:18 2021: SW- 4: Switch(config)# sdm prefer dual-ipv4-and-ipv6 default 
+Mon Dec 13 17:45:24 2021: SW- 4: Switch(config)# reload
+Mon Dec 13 17:45:27 2021: SW- 4: Switch(config)# exit
+Mon Dec 13 17:45:28 2021: SW- 4: Switch# reload
+Mon Dec 13 17:45:59 2021: SW- 4: Switch> en
+Mon Dec 13 17:46:01 2021: SW- 4: Switch# class
+Mon Dec 13 17:46:15 2021: SW- 4: Switch# conf t
+Mon Dec 13 17:46:18 2021: SW- 4: Switch(config)# int vlan 1
+Mon Dec 13 17:46:22 2021: SW- 4: Switch(config-if)# ipv6 ?
+Mon Dec 13 17:46:39 2021: SW- 4: Switch(config-if)# ipv6 address 2001:DB8:ACAD:CA02::3
+Mon Dec 13 17:46:46 2021: SW- 4: Switch(config-if)# ipv6 address 2001:DB8:ACAD:CA02::3/64
+Mon Dec 13 17:46:48 2021: SW- 4: Switch(config-if)# end
+Mon Dec 13 17:46:50 2021: SW- 4: Switch# conf t
+Mon Dec 13 17:46:53 2021: SW- 4: Switch(config)# ipv6 unicast-routing 
+Mon Dec 13 17:46:56 2021: SW- 4: Switch(config)# exit
+Mon Dec 13 17:46:58 2021: SW- 4: Switch# sh run
+Mon Dec 13 17:47:06 2021: SW- 4: Switch# conf t
+Mon Dec 13 17:47:08 2021: SW- 4: Switch(config)# int vlan 1
+Mon Dec 13 17:47:09 2021: SW- 4: Switch(config-if)# no shut
+Mon Dec 13 17:47:17 2021: SW- 4: Switch(config-if)# end
+Mon Dec 13 17:47:59 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 17:48:00 2021: Saving options...
+Mon Dec 13 17:48:00 2021: Options saved.
+Mon Dec 13 17:48:00 2021: File saved successfully.
+Mon Dec 13 17:48:05 2021: SW- 4: Switch# copy running-config startup-config 
+Mon Dec 13 17:48:09 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 17:48:10 2021: Saving options...
+Mon Dec 13 17:48:10 2021: Options saved.
+Mon Dec 13 17:48:10 2021: File saved successfully.
+Mon Dec 13 17:49:41 2021: R1: R1_AE> en
+Mon Dec 13 17:49:44 2021: R1: R1_AE# sh run
+Mon Dec 13 17:51:02 2021: R1: R1_AE# conf t
+Mon Dec 13 17:51:05 2021: R1: R1_AE(config)# exit
+Mon Dec 13 17:51:11 2021: R2: R2-AE> en
+Mon Dec 13 17:51:14 2021: R2: R2-AE# sh run
+Mon Dec 13 17:51:59 2021: R2: R2-AE# conf t
+Mon Dec 13 17:52:07 2021: R2: R2-AE(config)# int g0/0/0
+Mon Dec 13 17:52:19 2021: R2: R2-AE(config-if)# ipv6 address 2001:DB8:ACAD:CA04::1/64
+Mon Dec 13 17:52:22 2021: R2: R2-AE(config-if)# end
+Mon Dec 13 17:53:57 2021: R2: R2-AE# copy run startup-config 
+Mon Dec 13 17:54:07 2021: R1: R1_AE# copy run startup-config 
+Mon Dec 13 17:54:11 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 17:54:11 2021: Saving options...
+Mon Dec 13 17:54:11 2021: Options saved.
+Mon Dec 13 17:54:11 2021: File saved successfully.
+Mon Dec 13 17:59:23 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 17:59:25 2021: Saving options...
+Mon Dec 13 17:59:25 2021: Options saved.
+Mon Dec 13 17:59:25 2021: File saved successfully.
+Mon Dec 13 23:12:51 2021: R3: R3-AE> en
+Mon Dec 13 23:12:55 2021: R3: R3-AE# copy run startup-config 
+Mon Dec 13 23:13:21 2021: R3: R3-AE# copy startup-config tftp
+Mon Dec 13 23:13:33 2021: Edge: Edge-AE> en
+Mon Dec 13 23:13:37 2021: Edge: Edge-AE# copy run startup-config 
+Mon Dec 13 23:14:04 2021: Edge: Edge-AE# copy startup-config tftp
+Mon Dec 13 23:14:41 2021: R2: R2-AE# copy running-config startup-config 
+Mon Dec 13 23:14:50 2021: R2: R2-AE# copy startup-config tftp: 
+Mon Dec 13 23:15:08 2021: R1: R1_AE# copy running-config startup-config 
+Mon Dec 13 23:15:14 2021: R1: R1_AE# copy startup-config tftp: 
+Mon Dec 13 23:15:25 2021: ML-1: MIL1-AE> en
+Mon Dec 13 23:15:30 2021: ML-1: MIL1-AE# copy running-config startup-config 
+Mon Dec 13 23:15:37 2021: ML-1: MIL1-AE# copy startup-config tftp
+Mon Dec 13 23:15:48 2021: ML-2: MIL2-AE> en
+Mon Dec 13 23:15:53 2021: ML-2: MIL2-AE# copy run startup-config 
+Mon Dec 13 23:16:00 2021: ML-2: MIL2-AE# copy startup-config tftp
+Mon Dec 13 23:16:31 2021: ISP: ISP-AE> en
+Mon Dec 13 23:16:34 2021: ISP: ISP-AE# en
+Mon Dec 13 23:16:38 2021: ISP: ISP-AE# copy running-config startup-config 
+Mon Dec 13 23:16:42 2021: ISP: ISP-AE# copy startup-config tftp
+Mon Dec 13 23:16:52 2021: SW-0: SW0-AE> en
+Mon Dec 13 23:17:04 2021: SW-0: SW0-AE# copy run sr
+Mon Dec 13 23:17:06 2021: SW-0: SW0-AE# copy run startup-config 
+Mon Dec 13 23:17:12 2021: SW-0: SW0-AE# copy startup-config tftp
+Mon Dec 13 23:20:29 2021: R2: R2-AE# sh run
+Mon Dec 13 23:22:13 2021: R3: R3-AE# conf t
+Mon Dec 13 23:22:24 2021: R3: R3-AE(config)# ipv6 route ?
+Mon Dec 13 23:22:28 2021: R3: R3-AE(config)# ipv6 router ?
+Mon Dec 13 23:22:37 2021: R3: R3-AE(config)# ipv6 router ospf 20
+Mon Dec 13 23:22:51 2021: R3: R3-AE(config-rtr)# router-id 2.2.2.2
+Mon Dec 13 23:22:57 2021: R3: R3-AE(config-rtr)# ?
+Mon Dec 13 23:24:19 2021: R3: R3-AE(config-rtr)# exit
+Mon Dec 13 23:25:50 2021: R3: R3-AE(config)# int g0/0/0
+Mon Dec 13 23:25:52 2021: R3: R3-AE(config-if)# ipv6 ?
+Mon Dec 13 23:25:56 2021: R3: R3-AE(config-if)# ipv6 ospf ?
+Mon Dec 13 23:26:07 2021: R3: R3-AE(config-if)# ipv6 ospf 20 ?
+Mon Dec 13 23:26:14 2021: R3: R3-AE(config-if)# ipv6 ospf 20 area 0
+Mon Dec 13 23:26:38 2021: R1: R1_AE# conf t
+Mon Dec 13 23:26:44 2021: R1: R1_AE(config)# ipv6 router ospf 20
+Mon Dec 13 23:26:51 2021: R1: R1_AE(config-rtr)# router-id 1.1.1.1
+Mon Dec 13 23:26:58 2021: R1: R1_AE(config-rtr)# exit
+Mon Dec 13 23:27:16 2021: R1: R1_AE(config)# int port-channel 2
+Mon Dec 13 23:27:30 2021: R1: R1_AE(config-if)# ipv6 ospf 20 area 0
+Mon Dec 13 23:27:39 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 23:27:55 2021: R3: R3-AE(config-if)# exit
+Mon Dec 13 23:28:00 2021: R3: R3-AE(config)# end
+Mon Dec 13 23:28:05 2021: R3: R3-AE# sh ip ospf neighbor 
+Mon Dec 13 23:28:19 2021: R3: R3-AE# sh ip route
+Mon Dec 13 23:28:39 2021: R3: R3-AE# sh ip ospf ?
+Mon Dec 13 23:28:42 2021: R3: R3-AE# sh ip ospf interface ?
+Mon Dec 13 23:28:45 2021: R3: R3-AE# sh ip ospf interface g0/0/0
+Mon Dec 13 23:29:02 2021: R3: R3-AE# sh ipv6 ?
+Mon Dec 13 23:29:05 2021: R3: R3-AE# sh ipv6 router
+Mon Dec 13 23:29:06 2021: R3: R3-AE# sh ipv6 route
+Mon Dec 13 23:29:21 2021: R3: R3-AE# sh ipv6 ospf neighbor 
+Mon Dec 13 23:29:44 2021: R1: R1_AE# sh ipv6 route
+Mon Dec 13 23:31:18 2021: R3: R3-AE# conf t
+Mon Dec 13 23:31:23 2021: R3: R3-AE(config)# ipv6 router ospf 20
+Mon Dec 13 23:31:31 2021: R3: R3-AE(config-rtr)# ipv6 ospf ?
+Mon Dec 13 23:31:46 2021: R3: R3-AE(config-rtr)# ipv6 ?
+Mon Dec 13 23:31:48 2021: R3: R3-AE(config-rtr)# ?
+Mon Dec 13 23:32:15 2021: R3: R3-AE(config-rtr)# end
+Mon Dec 13 23:33:45 2021: R3: R3-AE# sh run
+Mon Dec 13 23:33:51 2021: R3: R3-AE# conf t
+Mon Dec 13 23:33:55 2021: R3: R3-AE(config)# int g0/0/1
+Mon Dec 13 23:34:01 2021: R3: R3-AE(config-if)# ipv6 ospf 20 area 0
+Mon Dec 13 23:34:03 2021: R3: R3-AE(config-if)# end
+Mon Dec 13 23:34:38 2021: R1: R1_AE# sh ipv6 route
+Mon Dec 13 23:35:27 2021: R2: R2-AE# conf t
+Mon Dec 13 23:35:32 2021: R2: R2-AE(config)# router ospf 100
+Mon Dec 13 23:35:38 2021: R2: R2-AE(config-router)# no  network 172.70.255.248 0.0.0.3 area 1
+Mon Dec 13 23:35:47 2021: R2: R2-AE(config-router)# no  network 172.70.255.240 0.0.0.3 area 1
+Mon Dec 13 23:35:49 2021: R2: R2-AE(config-router)# end
+Mon Dec 13 23:35:55 2021: R2: R2-AE# sh run
+Mon Dec 13 23:36:10 2021: R2: R2-AE# copy run startup-config 
+Mon Dec 13 23:36:18 2021: R2: R2-AE# copy startup-config tftp
+Mon Dec 13 23:38:06 2021: R1: R1_AE# conf t
+Mon Dec 13 23:38:12 2021: R1: R1_AE(config)# int g0/0/2
+Mon Dec 13 23:38:35 2021: R1: R1_AE(config-if)# ipv6 ospf 20 area 1
+Mon Dec 13 23:38:52 2021: R1: R1_AE(config-if)# ipv6 ospf network point-to-point 
+Mon Dec 13 23:38:54 2021: R1: R1_AE(config-if)# end
+Mon Dec 13 23:39:36 2021: R2: R2-AE# conf t
+Mon Dec 13 23:39:50 2021: R2: R2-AE(config)# ipv6 router ospf 20
+Mon Dec 13 23:39:54 2021: R2: R2-AE(config-rtr)# exit
+Mon Dec 13 23:40:01 2021: R2: R2-AE(config)# int g0/0/2
+Mon Dec 13 23:40:10 2021: R2: R2-AE(config-if)# ipv6 ospf 20 area 1
+Mon Dec 13 23:40:29 2021: R2: R2-AE(config-if)# ipv6 ospf network point-to-point 
+Mon Dec 13 23:40:48 2021: R2: R2-AE(config-if)# exit
+Mon Dec 13 23:40:53 2021: R2: R2-AE(config)# int g0/0/0
+Mon Dec 13 23:41:10 2021: R2: R2-AE(config-if)# ipv6 ospf 20 area 1
+Mon Dec 13 23:41:11 2021: R2: R2-AE(config-if)# end
+Mon Dec 13 23:43:13 2021: R1: R1_AE# sh ipv6 ospf neighbor 
+Mon Dec 13 23:43:22 2021: R1: R1_AE# sh ipv6 route
+Mon Dec 13 23:43:30 2021: R1: R1_AE# copy running-config startup-config 
+Mon Dec 13 23:43:36 2021: R1: R1_AE# copy startup-config tftp
+Mon Dec 13 23:43:38 2021: R1: R1_AE# copy startup-config tftp
+Mon Dec 13 23:44:07 2021: R2: R2-AE# sh ipv6 ospf neighbor 
+Mon Dec 13 23:44:13 2021: R2: R2-AE# sh ipv6 ospf route
+Mon Dec 13 23:44:16 2021: R2: R2-AE# sh ipv6 ospf ?
+Mon Dec 13 23:44:22 2021: R2: R2-AE# sh ipv6 route ospf
+Mon Dec 13 23:44:36 2021: R2: R2-AE# copy running-config startup-config 
+Mon Dec 13 23:44:41 2021: R2: R2-AE# copy startup-config tftp
+Mon Dec 13 23:44:58 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Mon Dec 13 23:44:59 2021: Saving options...
+Mon Dec 13 23:44:59 2021: Options saved.
+Mon Dec 13 23:44:59 2021: File saved successfully.
+Mon Dec 13 23:46:16 2021: Edge: Edge-AE> en
+Mon Dec 13 23:46:20 2021: Edge: Edge-AE# sh run
+Tue Dec 14 00:06:22 2021: R2: R2-AE> en
+Tue Dec 14 00:06:27 2021: R2: R2-AE# int g0/0/0
+Tue Dec 14 00:06:31 2021: R2: R2-AE# conf t
+Tue Dec 14 00:06:35 2021: R2: R2-AE(config)# int g0/0/0
+Tue Dec 14 00:06:57 2021: R2: R2-AE(config-if)# ipv6 address FE80::1 ?
+Tue Dec 14 00:07:00 2021: R2: R2-AE(config-if)# ipv6 address FE80::1 link-local 
+Tue Dec 14 00:07:01 2021: R2: R2-AE(config-if)# end
+Tue Dec 14 00:08:06 2021: R2: R2-AE# conf t
+Tue Dec 14 00:08:14 2021: R2: R2-AE(config)# do sh run
+Tue Dec 14 00:08:36 2021: R2: R2-AE(config)# int g0/0/0/600
+Tue Dec 14 00:08:41 2021: R2: R2-AE(config)# int g0/0/0.600
+Tue Dec 14 00:09:20 2021: R2: R2-AE(config-subif)# ipv6 add 2001:DB8:ACAD:CA06::1/64
+Tue Dec 14 00:09:22 2021: R2: R2-AE(config-subif)# end
+Tue Dec 14 00:09:24 2021: R2: R2-AE# sh run
+Tue Dec 14 00:10:36 2021: R2: R2-AE# copy run startup-config 
+Tue Dec 14 00:10:42 2021: R2: R2-AE# copy startup-config tftp
+Tue Dec 14 10:07:30 2021: R2: R2-AE> en
+Tue Dec 14 10:07:34 2021: R2: R2-AE# sh run
+Tue Dec 14 10:08:02 2021: R2: R2-AE# conf t
+Tue Dec 14 10:08:11 2021: R2: R2-AE(config)# int g0/0/0.600
+Tue Dec 14 10:08:13 2021: R2: R2-AE(config-subif)# ipv6 address FE80::1 link-local
+Tue Dec 14 10:08:15 2021: R2: R2-AE(config-subif)# end
+Tue Dec 14 10:13:04 2021: R3: R3-AE> en
+Tue Dec 14 10:13:13 2021: R3: R3-AE# sh ipv6 ospf neighbor 
+Tue Dec 14 10:14:23 2021: R3: R3-AE# sh run
+Tue Dec 14 10:15:08 2021: R3: R3-AE# conf t
+Tue Dec 14 10:15:17 2021: R3: R3-AE(config)# username akindele password admin
+Tue Dec 14 10:15:19 2021: R3: R3-AE(config)# end
+Tue Dec 14 10:15:20 2021: R3: R3-AE# sh run
+Tue Dec 14 10:15:28 2021: Edge: Edge-AE> en
+Tue Dec 14 10:15:32 2021: Edge: Edge-AE# sh run
+Tue Dec 14 10:19:49 2021: SW-0: SW0-AE> en
+Tue Dec 14 10:19:54 2021: SW-0: SW0-AE# copy run startup-config 
+Tue Dec 14 10:20:04 2021: SW-0: SW0-AE# copy start tftp
+Tue Dec 14 10:22:50 2021: SW-0: SW0-AE# sh run
+Tue Dec 14 10:23:15 2021: ML-1: MIL1-AE> en
+Tue Dec 14 10:23:19 2021: ML-1: MIL1-AE# sh ip ospf neighbor 
+Tue Dec 14 10:23:30 2021: ML-1: MIL1-AE# sh ip ospf route
+Tue Dec 14 10:23:36 2021: ML-1: MIL1-AE# sh ip route ospf
+Tue Dec 14 10:25:31 2021: R1: R1_AE> en
+Tue Dec 14 10:25:35 2021: R1: R1_AE# sh run
+Tue Dec 14 10:28:55 2021: ML-1: MIL1-AE# sh run
+Tue Dec 14 10:30:20 2021: Edge: Edge-AE# conf t
+Tue Dec 14 10:30:35 2021: Edge: Edge-AE(config)# ip route 192.45.9.0 255.255.255.0 172.45.2.5 
+Tue Dec 14 10:30:36 2021: Edge: Edge-AE(config)# end
+Tue Dec 14 10:31:29 2021: Edge: Edge-AE# conf t
+Tue Dec 14 10:31:33 2021: Edge: Edge-AE(config)# no ip route 192.45.9.0 255.255.255.0 172.45.2.5 
+Tue Dec 14 10:31:39 2021: Edge: Edge-AE(config)# ip route 192.45.9.0 255.255.255.252 172.45.2.5 
+Tue Dec 14 10:31:40 2021: Edge: Edge-AE(config)# end
+Tue Dec 14 10:32:57 2021: Edge: Edge-AE# sh run
+Tue Dec 14 10:33:27 2021: Edge: Edge-AE# con t
+Tue Dec 14 10:33:28 2021: Edge: Edge-AE# conf t
+Tue Dec 14 10:33:34 2021: Edge: Edge-AE(config)# no ip route 192.45.9.0 255.255.255.252 172.45.2.5 
+Tue Dec 14 10:33:41 2021: Edge: Edge-AE(config)# ip route 172.45.9.0 255.255.255.252 172.45.2.5 
+Tue Dec 14 10:33:43 2021: Edge: Edge-AE(config)# end
+Tue Dec 14 10:35:06 2021: R1: R1_AE# sh ip ospf neighbor 
+Tue Dec 14 10:35:46 2021: R1: R1_AE# conf t
+Tue Dec 14 10:36:08 2021: R1: R1_AE(config)# ip route 172.45.9.0 255.255.255.252 g0/0/2
+Tue Dec 14 10:36:09 2021: R1: R1_AE(config)# end
+Tue Dec 14 10:36:48 2021: R1: R1_AE# copy run startup-config 
+Tue Dec 14 10:36:54 2021: R1: R1_AE# copy start tftp
+Tue Dec 14 10:37:11 2021: Edge: Edge-AE# copy run startup-config 
+Tue Dec 14 10:37:19 2021: Edge: Edge-AE# copy start tftp
+Tue Dec 14 10:37:50 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Tue Dec 14 10:37:50 2021: Saving options...
+Tue Dec 14 10:37:50 2021: Options saved.
+Tue Dec 14 10:37:50 2021: File saved successfully.
+Tue Dec 14 10:45:26 2021: Saving to file: C:/Users/Guest/Desktop/Project 1 Oplossingen/check.pka
+Tue Dec 14 10:45:27 2021: Saving options...
+Tue Dec 14 10:45:27 2021: Options saved.
+Tue Dec 14 10:45:27 2021: File saved successfully.
+Tue Dec 14 10:47:58 2021: R3: R3-AE> en
+Tue Dec 14 10:48:01 2021: R3: R3-AE# conf t
+Tue Dec 14 10:48:08 2021: R3: R3-AE(config)# ipv6 ?
+Tue Dec 14 10:48:19 2021: R3: R3-AE(config)# int g0/0/1
+Tue Dec 14 10:48:30 2021: R3: R3-AE(config-if)# ipv6 address fe80::1 link-local 
+Tue Dec 14 10:48:51 2021: c:\users\cisco\jenkins\workspace\pt801\m_sgme_pt801_win64\engine\util\analyticstracker.cpp(383):WARN  - CAnalyticsTracker::finished_request() - error:499, url:https://analytics01.cisco.netacad.com/Service02/analytics/v1/heartbeat7/%7Bbe85d453-95d9-4943-8722-beb45725b58f%7D/windows64/ptdesktop/8.0.1.0064/app%5Etrack-screen%5Erealtime-mode%5E0/ef95b2eb-a556-45f4-8761-81fbabea1185, data:
+Tue Dec 14 10:50:26 2021: SW- 4: Switch> en
+Tue Dec 14 10:50:27 2021: SW- 4: Switch# class
+Tue Dec 14 10:50:38 2021: SW- 4: Switch# sh run
+Tue Dec 14 10:54:13 2021: R3: R3-AE(config-if)# end
+Tue Dec 14 10:54:18 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA06:260:47FF:FEC2:D791
+Tue Dec 14 10:54:29 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA06:260:47FF:FEC2:D791
+Tue Dec 14 10:54:58 2021: R3: R3-AE# sh run
+Tue Dec 14 10:55:06 2021: R3: R3-AE# sh ipv6 ospf neighbor 
+Tue Dec 14 10:55:13 2021: R3: R3-AE# sh ipv6 route ospf 
+Tue Dec 14 10:56:01 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA01::1
+Tue Dec 14 10:56:15 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA03::2/64
+Tue Dec 14 10:56:30 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA03::2
+Tue Dec 14 10:57:15 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA04::1
+Tue Dec 14 10:57:41 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA06::1
+Tue Dec 14 10:57:53 2021: R2: R2-AE> en
+Tue Dec 14 10:57:56 2021: R2: R2-AE# sh run
+Tue Dec 14 10:58:07 2021: R2: R2-AE# conf t
+Tue Dec 14 10:58:14 2021: R2: R2-AE(config)# int g0/0/0.600
+Tue Dec 14 10:58:23 2021: R2: R2-AE(config-subif)# ipv6 ospf 20 area 1
+Tue Dec 14 10:58:28 2021: R2: R2-AE(config-subif)# end
+Tue Dec 14 10:58:36 2021: R1: R1_AE> en
+Tue Dec 14 10:58:44 2021: R1: R1_AE# sh ipv6 route ospf
+Tue Dec 14 10:58:51 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA06::1
+Tue Dec 14 10:59:05 2021: R3: R3-AE# sh ipv6 route ospf 
+Tue Dec 14 10:59:20 2021: R3: R3-AE# conf t
+Tue Dec 14 10:59:21 2021: R3: R3-AE(config)# end
+Tue Dec 14 10:59:23 2021: R3: R3-AE# sh run
+Tue Dec 14 11:00:05 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA06:260:47FF:FEC2:D791
+Tue Dec 14 11:00:15 2021: R3: R3-AE# ping 2001:DB8:ACAD:CA06:260:47FF:FEC2:D791
+Tue Dec 14 11:02:29 2021: SW- 4: Switch# conf t
+Tue Dec 14 11:02:34 2021: SW- 4: Switch(config)# ipv6 route ?
+Tue Dec 14 11:03:31 2021: SW- 4: Switch(config)# ipv6 route ::/0 ?

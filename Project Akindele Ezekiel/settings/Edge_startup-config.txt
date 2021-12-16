@@ -1,0 +1,105 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname Edge-AE
+!
+!
+!
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+enable password 7 0822455D0A16
+!
+!
+!
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username akindele password 7 082048430017
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address dhcp
+ ip access-group 20 out
+ ip nat outside
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ ip address 172.45.2.4 255.255.255.248
+ ip ospf authentication message-digest
+ ip ospf message-digest-key 1 md5 akindele
+ ip ospf priority 0
+ ip nat inside
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 100
+ router-id 2.2.2.2
+ log-adjacency-changes
+ network 172.45.2.0 0.0.0.7 area 0
+ default-information originate
+!
+ip nat inside source list 30 interface GigabitEthernet0/0/0 overload
+ip nat inside source static udp 192.45.0.2 80 172.45.8.2 80 
+ip classless
+ip route 192.45.0.0 255.255.0.0 172.45.2.5 
+ip route 172.45.9.0 255.255.255.252 172.45.2.5 
+!
+ip flow-export version 9
+!
+!
+access-list 30 permit 172.16.45.0 0.0.0.255
+access-list 30 permit 172.17.45.0 0.0.0.255
+access-list 30 permit 172.18.45.0 0.0.0.255
+access-list 30 permit 172.19.45.0 0.0.0.255
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+ transport input ssh
+!
+!
+!
+end
+

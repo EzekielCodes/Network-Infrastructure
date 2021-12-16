@@ -1,0 +1,243 @@
+!
+version 16.3.2
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname MIL2-AE
+!
+!
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+enable password 7 0822455D0A16
+!
+!
+!
+!
+!
+!
+no ip cef
+ip routing
+!
+no ipv6 cef
+!
+!
+!
+username akindele password 7 082048430017
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip domain-name ikdoeict.be
+!
+!
+spanning-tree mode pvst
+spanning-tree vlan 200,400 priority 24576
+spanning-tree vlan 100,300,500,999 priority 28672
+!
+!
+!
+!
+!
+!
+interface Port-channel2
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 100,200,300,400,500
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Port-channel3
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 100,200,300,400,500
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+!
+interface Port-channel4
+ no switchport
+ ip address 172.45.2.2 255.255.255.248
+ ip ospf authentication message-digest
+ ip ospf message-digest-key 1 md5 akindele
+ ip ospf priority 0
+ ip access-group 104 out
+!
+interface Port-channel5
+ no switchport
+ no ip address
+!
+interface GigabitEthernet1/0/1
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 100,200,300,400,500
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 3 mode desirable
+!
+interface GigabitEthernet1/0/2
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 100,200,300,400,500
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 3 mode desirable
+!
+interface GigabitEthernet1/0/3
+ no switchport
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet1/0/4
+ no switchport
+ no ip address
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet1/0/5
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 100,200,300,400,500
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 2 mode active
+!
+interface GigabitEthernet1/0/6
+ switchport trunk native vlan 999
+ switchport trunk allowed vlan 100,200,300,400,500
+ switchport trunk encapsulation dot1q
+ switchport mode trunk
+ channel-group 2 mode active
+!
+interface GigabitEthernet1/0/7
+ no switchport
+ no ip address
+ channel-group 4
+ channel-group 4 mode active
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet1/0/8
+ no switchport
+ no ip address
+ channel-group 4
+ channel-group 4 mode active
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet1/0/9
+!
+interface GigabitEthernet1/0/10
+!
+interface GigabitEthernet1/0/11
+!
+interface GigabitEthernet1/0/12
+!
+interface GigabitEthernet1/0/13
+!
+interface GigabitEthernet1/0/14
+!
+interface GigabitEthernet1/0/15
+!
+interface GigabitEthernet1/0/16
+!
+interface GigabitEthernet1/0/17
+!
+interface GigabitEthernet1/0/18
+!
+interface GigabitEthernet1/0/19
+!
+interface GigabitEthernet1/0/20
+!
+interface GigabitEthernet1/0/21
+!
+interface GigabitEthernet1/0/22
+!
+interface GigabitEthernet1/0/23
+!
+interface GigabitEthernet1/0/24
+!
+interface GigabitEthernet1/1/1
+!
+interface GigabitEthernet1/1/2
+!
+interface GigabitEthernet1/1/3
+!
+interface GigabitEthernet1/1/4
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+interface Vlan100
+ mac-address 0040.0b94.3101
+ ip address 172.16.45.3 255.255.255.0
+ ip helper-address 172.45.2.6
+ standby 1 ip 172.16.45.1
+!
+interface Vlan200
+ mac-address 0040.0b94.3102
+ ip address 172.17.45.3 255.255.255.0
+ ip helper-address 172.45.2.6
+ standby 2 ip 172.17.45.1
+!
+interface Vlan300
+ mac-address 0040.0b94.3103
+ ip address 172.18.45.3 255.255.255.0
+ ip helper-address 172.45.2.6
+ standby 3 ip 172.18.45.1
+!
+interface Vlan400
+ mac-address 0040.0b94.3104
+ ip address 172.19.45.3 255.255.255.0
+ ip helper-address 172.45.2.6
+ standby 4 ip 172.19.45.1
+!
+interface Vlan500
+ mac-address 0040.0b94.3105
+ ip address 172.20.45.3 255.255.255.0
+ ip helper-address 172.45.2.6
+ standby 5 ip 172.20.45.1
+!
+router ospf 100
+ router-id 1.1.1.1
+ log-adjacency-changes
+ network 172.45.2.0 0.0.0.7 area 0
+ network 172.19.45.0 0.0.0.255 area 0
+ network 172.17.45.0 0.0.0.255 area 0
+!
+ip default-gateway 172.45.2.6
+ip classless
+ip route 0.0.0.0 0.0.0.0 172.45.2.4 
+!
+ip flow-export version 9
+!
+!
+access-list 104 remark block afdeling 1 en 2
+access-list 104 deny ip 172.16.45.0 0.0.0.255 host 192.45.20.1
+access-list 104 deny ip 172.17.45.0 0.0.0.255 host 192.45.20.1
+access-list 104 permit ip any any
+ip access-list standard block-ssh
+ remark allow only vlan admin
+ permit 192.45.10.0 0.0.0.255
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ access-class block-ssh in
+ login local
+ transport input ssh
+!
+!
+!
+!
+end
+

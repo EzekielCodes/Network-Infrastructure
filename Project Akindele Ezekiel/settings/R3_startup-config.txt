@@ -1,0 +1,110 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+service password-encryption
+!
+hostname R3-AE
+!
+!
+!
+enable secret 5 $1$mERr$9cTjUIEqNGurQiFU.ZeCi1
+enable password 7 0822455D0A16
+!
+!
+!
+!
+!
+!
+ip cef
+ipv6 unicast-routing
+!
+no ipv6 cef
+!
+!
+!
+username akindele password 7 082048430017
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+ip domain-name ikdoeict.be
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 172.45.2.3 255.255.255.248
+ ip ospf authentication message-digest
+ ip ospf message-digest-key 1 md5 akindele
+ ip ospf priority 0
+ duplex auto
+ speed auto
+ ipv6 address 2001:DB8:ACAD:CA01::2/64
+ ipv6 ospf 20 area 0
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ ipv6 traffic-filter permit_icmp_webverkeer out
+ duplex auto
+ speed auto
+ ipv6 address 2001:DB8:ACAD:CA02::1/64
+ ipv6 ospf 20 area 0
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 100
+ router-id 3.3.3.3
+ log-adjacency-changes
+ network 172.45.2.0 0.0.0.7 area 0
+!
+ipv6 router ospf 20
+ router-id 2.2.2.2
+ log-adjacency-changes
+!
+ip default-gateway 172.45.2.4
+ip classless
+ip route 0.0.0.0 0.0.0.0 172.45.2.4 
+!
+ip flow-export version 9
+!
+!
+ipv6 access-list permit_icmp_webverkeer
+ permit icmp 2001:DB8:ACAD:CA06::/64 any
+ permit tcp 2001:DB8:ACAD:CA06::/64 any eq www
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+ transport input ssh
+!
+!
+!
+end
+

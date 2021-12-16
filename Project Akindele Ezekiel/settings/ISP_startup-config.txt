@@ -1,0 +1,89 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ISP-AE
+!
+!
+!
+!
+ip dhcp excluded-address 172.45.8.1
+!
+ip dhcp pool edge
+ network 172.45.8.0 255.255.255.252
+ default-router 172.45.8.1
+!
+!
+!
+ip cef
+no ipv6 cef
+!
+!
+!
+username akindele password 0 admin
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 8.8.8.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ ip address 172.45.8.1 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet0/0/1 
+ip route 172.16.45.0 255.255.255.0 GigabitEthernet0/0/1 
+ip route 172.17.45.0 255.255.255.0 GigabitEthernet0/0/1 
+ip route 172.18.45.0 255.255.255.0 GigabitEthernet0/0/1 
+ip route 172.19.45.0 255.255.255.0 GigabitEthernet0/0/1 
+!
+ip flow-export version 9
+!
+!
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+!
+end
+
