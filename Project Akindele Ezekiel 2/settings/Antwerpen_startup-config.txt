@@ -1,0 +1,137 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname Antwerp-AE
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+crypto isakmp policy 1
+ encr aes 256
+ authentication pre-share
+ group 2
+!
+crypto isakmp key AKINDELE address 20.45.20.2
+!
+!
+!
+crypto ipsec transform-set GRE esp-aes esp-sha-hmac
+!
+crypto map CMAP 1 ipsec-isakmp 
+ description vpn to gent
+ set peer 20.45.20.2
+ set transform-set GRE 
+ match address IPSEC
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Tunnel0
+ ip address 172.45.31.2 255.255.255.252
+ mtu 1476
+ tunnel source Serial0/1/1
+ tunnel destination 20.45.20.2
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 50.45.50.1 255.255.255.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/1/0
+ ip address 60.45.60.1 255.255.255.252
+ ip nat inside
+ clock rate 2000000
+!
+interface Serial0/1/1
+ ip address 2.45.2.1 255.255.255.252
+ ip nat outside
+ crypto map CMAP
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 45
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/0
+ passive-interface Serial0/1/1
+ network 172.45.31.0 0.0.0.3 area 0
+ network 50.45.50.0 0.0.0.255 area 0
+!
+router ospf 46
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/0
+ passive-interface Serial0/1/1
+ network 60.45.60.0 0.0.0.3 area 0
+!
+ip nat inside source list 1 interface Serial0/1/1 overload
+ip classless
+ip route 0.0.0.0 0.0.0.0 2.45.2.2 
+!
+ip flow-export version 9
+!
+!
+ip access-list extended IPSEC
+ remark vpn control
+ permit ip host 2.45.2.1 host 20.45.20.2
+access-list 1 permit 172.45.16.0 0.0.0.255
+access-list 1 permit 172.45.25.0 0.0.0.255
+!
+no cdp run
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+ntp authentication-key 1 md5 08004747071D001B17 7
+ntp authenticate
+ntp trusted-key 1
+ntp server 209.165.80.2
+ntp master 2
+!
+end
+

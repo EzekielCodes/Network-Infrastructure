@@ -1,0 +1,111 @@
+!
+version 15.4
+no service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname ISP1-AE
+!
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 209.165.80.1 255.255.252.0
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/1/0
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Serial0/1/1
+ ip address 20.45.20.1 255.255.255.252
+!
+interface Serial0/2/0
+ ip address 10.45.10.1 255.255.255.252
+ clock rate 2000000
+!
+interface Serial0/2/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router bgp 65512
+ bgp log-neighbor-changes
+ no synchronization
+ neighbor 10.45.10.2 remote-as 65531
+ network 10.45.10.0 mask 255.255.255.252
+ network 20.45.20.0 mask 255.255.255.252
+ network 209.165.80.0 mask 255.255.252.0
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 Serial0/1/1 
+!
+ip flow-export version 9
+!
+!
+!
+no cdp run
+!
+!
+!
+!
+!
+!
+line con 0
+!
+line aux 0
+!
+line vty 0 4
+ login
+!
+!
+ntp authentication-key 1 md5 08004747071D001B17 7
+ntp authenticate
+ntp trusted-key 1
+ntp server 209.165.80.2
+!
+end
+

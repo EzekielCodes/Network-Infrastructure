@@ -1,0 +1,115 @@
+!
+version 15.4
+service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R3-AE
+!
+!
+!
+enable secret 5 $1$mERr$hx5rVt7rPNoS4wqbXKX7m0
+!
+!
+!
+!
+!
+aaa new-model
+!
+aaa authentication login AAACON group radius enable 
+aaa authentication login AAAEXT group radius none 
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username ezekiel password 0 cisco123
+!
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface GigabitEthernet0/0/0
+ ip address 40.45.40.4 255.255.255.248
+ ip ospf hello-interval 5
+ ip ospf dead-interval 20
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ ip address 192.45.3.1 255.255.255.252
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/2
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 45
+ router-id 3.3.3.3
+ log-adjacency-changes
+ passive-interface GigabitEthernet0/0/1
+ auto-cost reference-bandwidth 1000
+ network 40.45.40.0 0.0.0.7 area 1
+ network 192.45.3.0 0.0.0.3 area 1
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 40.45.40.1 
+!
+ip flow-export version 9
+!
+!
+!
+no cdp run
+!
+!
+radius-server host 50.45.50.2 auth-port 1812 key ezekiel
+!
+!
+!
+!
+logging 192.45.4.2
+line con 0
+ login authentication AAACON
+!
+line aux 0
+!
+line vty 0 4
+ login authentication AAAEXT
+ transport input ssh
+line vty 5 15
+ login authentication AAAEXT
+ transport input ssh
+!
+!
+ntp server 30.45.30.2
+!
+end
+

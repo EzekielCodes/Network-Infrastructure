@@ -1,0 +1,147 @@
+!
+version 15.4
+service timestamps log datetime msec
+no service timestamps debug datetime msec
+no service password-encryption
+!
+hostname R5-AE
+!
+!
+!
+!
+!
+!
+!
+aaa new-model
+!
+aaa authentication login AAACON group radius enable 
+aaa authentication login AAAEXT group radius none 
+!
+!
+!
+!
+!
+!
+!
+no ip cef
+no ipv6 cef
+!
+!
+!
+username ezekiel password 0 cisco123
+!
+!
+!
+flow exporter export-host
+ destination 192.45.4.2
+ transport udp 9996
+!
+flow record Akindele-OUTBOUND
+ match ipv4 destination address
+ match transport destination-port
+ collect counter bytes
+ collect counter packets
+ collect timestamp sys-uptime first
+ collect timestamp sys-uptime last
+!
+flow monitor export-monitor
+ record Akindele-OUTBOUND
+ exporter export-host
+!
+!
+!
+!
+!
+!
+!
+ip ssh version 2
+no ip domain-lookup
+!
+!
+spanning-tree mode pvst
+!
+!
+!
+!
+!
+!
+interface Loopback0
+ ip address 1.1.1.1 255.255.255.0
+!
+interface GigabitEthernet0/0/0
+ ip flow monitor export-monitor output
+ ip flow monitor export-monitor input
+ ip address 40.45.40.1 255.255.255.248
+ ip ospf hello-interval 5
+ ip ospf dead-interval 20
+ duplex auto
+ speed auto
+!
+interface GigabitEthernet0/0/1
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface GigabitEthernet0/0/2
+ media-type sfp
+ no ip address
+ duplex auto
+ speed auto
+ shutdown
+!
+interface Serial0/1/0
+ ip address 30.45.30.1 255.255.255.252
+ clock rate 2000000
+!
+interface Serial0/1/1
+ no ip address
+ clock rate 2000000
+ shutdown
+!
+interface Vlan1
+ no ip address
+ shutdown
+!
+router ospf 45
+ router-id 5.5.5.5
+ log-adjacency-changes
+ auto-cost reference-bandwidth 1000
+ network 40.45.40.0 0.0.0.7 area 1
+ network 30.45.30.0 0.0.0.3 area 0
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 30.45.30.2 
+!
+ip flow-export version 9
+!
+!
+!
+no cdp run
+!
+!
+radius-server host 50.45.50.2 auth-port 1812 key ezekiel
+!
+!
+!
+snmp-server community public-akindele RO
+snmp-server community private-akindele RW
+!
+logging 192.45.4.2
+line con 0
+ login authentication AAACON
+!
+line aux 0
+!
+line vty 0 4
+ login authentication AAAEXT
+ transport input ssh
+line vty 5 15
+ login authentication AAAEXT
+ transport input ssh
+!
+!
+ntp server 30.45.30.2
+!
+end
+
